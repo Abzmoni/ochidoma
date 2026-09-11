@@ -108,7 +108,7 @@ export default function Header() {
           <div className="flex items-center gap-space-sm">
             <Link
               href="/giving"
-              className="inline-flex items-center justify-center px-space-md md:px-space-lg py-space-sm rounded-lg bg-royal-gold text-rich-black font-body text-[11px] md:text-[12px] font-bold uppercase tracking-wider hover:bg-tertiary-fixed transition-colors shadow-sm"
+              className="hidden lg:inline-flex items-center justify-center px-space-md md:px-space-lg py-space-sm rounded-lg bg-royal-gold text-rich-black font-body text-[11px] md:text-[12px] font-bold uppercase tracking-wider hover:bg-tertiary-fixed transition-colors shadow-sm"
             >
               Donate
             </Link>
@@ -169,6 +169,14 @@ export default function Header() {
                 </Link>
               );
             })}
+            <div className="mt-space-lg mb-space-sm">
+              <Link
+                href="/giving"
+                className="flex items-center justify-center w-full px-space-md py-space-md rounded-lg bg-royal-gold text-rich-black font-body text-[14px] font-bold uppercase tracking-wider hover:bg-tertiary-fixed transition-colors shadow-sm"
+              >
+                Donate
+              </Link>
+            </div>
             <p className="font-body text-[11px] text-outline uppercase tracking-widest pt-space-lg">
               Otukpo · Benue State · Nigeria
             </p>

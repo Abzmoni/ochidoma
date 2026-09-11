@@ -83,7 +83,7 @@ export default function Home() {
             <div className="max-w-[1200px] mx-auto h-full px-margin-mobile md:px-margin flex flex-col justify-end pb-[calc(env(safe-area-inset-bottom)_+_3.5rem)] md:pb-space-xl">
               <div className="max-w-3xl flex flex-col items-start gap-space-md">
                 {/* Eyebrow */}
-                <div className="inline-flex items-center gap-space-sm px-space-md py-space-xs bg-rich-black/55 border border-royal-gold/50 rounded-full backdrop-blur-sm">
+                <div className="hidden md:inline-flex items-center gap-space-sm px-space-md py-space-xs bg-rich-black/55 border border-royal-gold/50 rounded-full backdrop-blur-sm">
                   <span
                     className="material-symbols-outlined text-royal-gold text-[15px]"
                     style={{ fontVariationSettings: "'FILL' 1" }}
@@ -158,7 +158,7 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto px-margin-mobile md:px-margin">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
             {/* The Throne */}
-            <article className="group bg-surface-container-lowest rounded-lg border-t-4 border-royal-gold p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <article className="group bg-surface-container-lowest rounded-lg border-2 border-royal-gold p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div>
                 <div className="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-space-md text-primary-container">
                   <span
@@ -194,7 +194,7 @@ export default function Home() {
             </article>
 
             {/* News & Gazette */}
-            <article className="group bg-surface-container-lowest rounded-lg border-t-4 border-royal-gold p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+            <article className="group bg-surface-container-lowest rounded-lg border-2 border-royal-gold p-space-lg shadow-sm flex flex-col justify-between hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
               <div>
                 <div className="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-space-md text-primary-container">
                   <span className="material-symbols-outlined text-[28px]">
