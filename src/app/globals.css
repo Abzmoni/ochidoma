@@ -1,26 +1,356 @@
+/* ── Material Symbols icon font ── */
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ── Och'Idoma Design System Tokens (Tailwind v4 @theme) ── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* ─── Colour palette ─── */
+  --color-surface: #fef9f0;
+  --color-surface-dim: #ded9d1;
+  --color-surface-bright: #fef9f0;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f8f3ea;
+  --color-surface-container: #f2ede4;
+  --color-surface-container-high: #ece8df;
+  --color-surface-container-highest: #e7e2d9;
+  --color-on-surface: #1d1c16;
+  --color-on-surface-variant: #584140;
+  --color-inverse-surface: #32302b;
+  --color-inverse-on-surface: #f5f0e7;
+  --color-outline: #8b716f;
+  --color-outline-variant: #dfbfbd;
+  --color-surface-tint: #a93537;
+
+  --color-primary: #6b0210;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #8b1e24;
+  --color-on-primary-container: #ff9d99;
+  --color-inverse-primary: #ffb3b0;
+
+  --color-secondary: #625d5b;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #e9e1dd;
+  --color-on-secondary-container: #686360;
+
+  --color-tertiary: #755b00;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #cea72c;
+  --color-on-tertiary-container: #503d00;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --color-primary-fixed: #ffdad8;
+  --color-primary-fixed-dim: #ffb3b0;
+  --color-on-primary-fixed: #410006;
+  --color-on-primary-fixed-variant: #891c22;
+
+  --color-secondary-fixed: #e9e1dd;
+  --color-secondary-fixed-dim: #ccc5c1;
+  --color-on-secondary-fixed: #1e1b19;
+  --color-on-secondary-fixed-variant: #4a4643;
+
+  --color-tertiary-fixed: #ffe08e;
+  --color-tertiary-fixed-dim: #ecc246;
+  --color-on-tertiary-fixed: #241a00;
+  --color-on-tertiary-fixed-variant: #584400;
+
+  --color-background: #fef9f0;
+  --color-on-background: #1d1c16;
+  --color-surface-variant: #e7e2d9;
+  --color-text-primary: #211d1a;
+  --color-text-muted: #6b625a;
+  --color-status-success: #3f6b4a;
+
+  /* Named palette shortcuts */
+  --color-regal-red: #8b1e24;
+  --color-regal-red-dark: #6b0210;
+  --color-rich-black: #161311;
+  --color-royal-gold: #c9a227;
+  --color-warm-ivory: #f7f2e9;
+
+  /* ─── Typography ───
+     next/font loads the real families under hashed names and exposes them as
+     --font-playfair / --font-source-sans on <html>. Referencing those here (rather
+     than re-declaring the literal family names, which collide with next/font's own
+     declaration on the same element) is what `inline` exists for. */
+  --font-heading: var(--font-playfair), "Playfair Display", Georgia, serif;
+  --font-body: var(--font-source-sans), "Source Sans 3", system-ui, sans-serif;
+
+  /* ─── Border radius ─── */
+  --radius-sm: 0.125rem;
+  --radius-DEFAULT: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  /* ─── Spacing tokens ─── */
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-mobile: 1rem;
+  --spacing-margin: 3rem;
+  --spacing-margin-mobile: 1.25rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Layout constants ── */
+:root {
+  /* Height of the fixed masthead. Drives hero offset and anchor scroll padding. */
+  --header-h: 5rem;
+}
+
+/* ── Global base resets ── */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Anchor links (e.g. /the-throne#council) must clear the fixed masthead. */
+  scroll-padding-top: calc(var(--header-h) + 1rem);
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overscroll-behavior-y: none;
+  background: var(--color-surface);
+  color: var(--color-on-surface);
+  font-family: var(--font-body);
+  /* Design system asks for generous, printed-document line-height. */
+  line-height: 1.6;
+}
+
+/* Serif headings should read as carved, not thin: tighter leading, balanced
+   line breaks, and lining figures so dates/regnal numerals align. */
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.15;
+  text-wrap: balance;
+  font-variant-numeric: lining-nums;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: var(--color-tertiary-container);
+  color: var(--color-on-tertiary-container);
+}
+
+/* Keyboard focus was previously invisible sitewide. Gold ring reads as on-brand
+   without introducing a new colour. */
+:focus-visible {
+  outline: 2px solid var(--color-royal-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* A slim, on-brand scrollbar — hiding it entirely removed the only cue that
+   these long archival pages continue below the fold. */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-surface-container);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbc3b6;
+  border: 2px solid var(--color-surface-container);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-royal-gold);
+}
+html {
+  scrollbar-color: #cbc3b6 var(--color-surface-container);
+  scrollbar-width: thin;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ── Material Symbols helper ── */
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga";
+}
+
+/* ── Fluid display type ──
+   The static 34→48px step left the hero portrait feeling larger than the name it
+   carries on wide screens. These scale continuously between the design system's
+   mobile and desktop sizes instead of snapping at one breakpoint. */
+.type-display {
+  font-size: clamp(2.125rem, 1.35rem + 3.4vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.015em;
+}
+
+.type-headline {
+  font-size: clamp(1.625rem, 1.24rem + 1.7vw, 2.25rem);
+  line-height: 1.2;
+}
+
+/* Between the two: article and gazette titles, which run long enough that the
+   full display size would swallow the page, but are still the h1. */
+.type-title {
+  font-size: clamp(1.75rem, 1.3rem + 2vw, 2.75rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* Big figures in stat strips. A flat 48px overflowed its column on a phone,
+   where these sit two-up. */
+.type-stat {
+  font-size: clamp(1.75rem, 1.15rem + 2.6vw, 3rem);
+  line-height: 1.1;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* ── Hero scrims ──
+   Kept in CSS rather than stacked utility divs so the layers compose in one
+   paint. Bottom scrim carries the text, top scrim protects the masthead, and the
+   vignette closes the frame like a printed portrait plate. No colour cast: the
+   regalia's own red and gold do that work. */
+.hero-scrim {
+  background:
+    linear-gradient(
+      to top,
+      rgba(12, 10, 9, 0.94) 0%,
+      rgba(12, 10, 9, 0.82) 18%,
+      rgba(12, 10, 9, 0.42) 42%,
+      rgba(12, 10, 9, 0.08) 68%,
+      rgba(12, 10, 9, 0) 100%
+    ),
+    linear-gradient(
+      to right,
+      rgba(12, 10, 9, 0.8) 0%,
+      rgba(12, 10, 9, 0.45) 38%,
+      rgba(12, 10, 9, 0) 72%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(12, 10, 9, 0.78) 0%,
+      rgba(12, 10, 9, 0.28) 9%,
+      rgba(12, 10, 9, 0) 20%
+    );
+}
+
+.hero-vignette {
+  background: radial-gradient(
+    120% 85% at 62% 38%,
+    rgba(12, 10, 9, 0) 42%,
+    rgba(12, 10, 9, 0.28) 78%,
+    rgba(12, 10, 9, 0.55) 100%
+  );
+}
+
+/* ── Idoma ceremonial weave ──
+   Red-and-black banding drawn from the woven Apa cloth in the regalia. Used as a
+   section edge and as a watermark, replacing generic crown/shield clipart. Pure
+   gradients, so it costs nothing to download on a slow connection. */
+.idoma-weave {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--color-rich-black) 0 6px,
+    var(--color-regal-red) 6px 10px,
+    var(--color-rich-black) 10px 12px,
+    var(--color-royal-gold) 12px 13px,
+    var(--color-rich-black) 13px 19px
+  );
+}
+
+.idoma-weave-diagonal {
+  background-image: repeating-linear-gradient(
+    135deg,
+    rgba(247, 242, 233, 0.14) 0 2px,
+    rgba(247, 242, 233, 0) 2px 16px,
+    rgba(201, 162, 39, 0.16) 16px 19px,
+    rgba(247, 242, 233, 0) 19px 34px
+  );
+}
+
+/* ── Print ──
+   The gazette pages offer a "Print Folio" button, and communiqués from this
+   institution get printed and filed for real. Without this, a print produced the
+   fixed masthead over the first paragraph, the nav and footer on every copy, and
+   ivory-on-ivory body text. */
+@media print {
+  :root {
+    --header-h: 0rem;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  /* Site furniture and interactive controls carry no meaning on paper. */
+  header,
+  footer,
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding-top: 0 !important;
+  }
+
+  /* Keep figures, signature blocks and list items whole across page breaks. */
+  figure,
+  blockquote,
+  li,
+  article > header {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  /* Print the destination of a link the reader can't click. */
+  a[href^="http"]::after {
+    content: " <" attr(href) ">";
+    font-size: 0.8em;
+    font-weight: 400;
+    word-break: break-all;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
 }
