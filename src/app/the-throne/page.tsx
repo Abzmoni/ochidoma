@@ -24,7 +24,7 @@ export default function TheThrone() {
                     alt="His Royal Majesty Agaba'Idu John Elaigwu Odogbo, Och'Idoma V seated in full traditional regalia upon the ancestral carved wooden stool"
                     className="object-cover object-center"
                     src={cdn(
-                      "https://lh3.googleusercontent.com/aida/AEtjO1UGeLMZtRIEckgkpqtCE9yAQq_i7cq7EB7IZHH63uoQB5GIkBEvv36XLQCcXqj9JkCa6Xzb6tZJsRuZ3eKZubu-U3M6R9roiWHboWanu4u-ld-ItfE8u_FNPPrt7whsuP8kYjEdAQJPtBRVsERBLcWTduN8PEc4jG7mm6A8c4RHfOe2VCxprZS2xLAY7ROeAyeiq6rJLr4RbDhFloPL1lKUy70p9QhWW-u72wTDSLjhObJBRF3CPeRXlKg"
+                      "/ph2.jpg"
                     )}
                     fill
                     sizes="(max-width: 480px) 90vw, 448px"

@@ -54,7 +54,7 @@ const RAW_PLATES: Plate[] = [
     place: "Otukpo Palace Grounds",
     date: "Circa 1926 · Restored 2025",
     alt: "Council of Idoma chiefs seated in woven Apa regalia at the Otukpo palace square",
-    src: "https://lh3.googleusercontent.com/aida/AEtjO1WDVLT-BKgsgtGy9AMtR3yhb0MZQchBOffI-_hTSKQX09OS3kgue8Ls8rtlaQDV3EHEpqc8tXVmE3oKK9kghu9Qni4fJUZS-yqOgAL4bsEddgHeDF14eyMQejQ0X-8OQH5ANTsnc32tPMEoBi03N5YeW3Vgh-oaJJFEu0z1JqMrUAoBgSxFLY1emKmCuL4jnRpdzak9fF_xm9T7y_1DkVOPp3uN7EXJ99JITfxJUvGOe6Nv12ntIldacHI",
+    src: "/ph1.jpg",
   },
   {
     ref: "IDM-PH-2024-118",
@@ -72,7 +72,7 @@ const RAW_PLATES: Plate[] = [
     place: "Palace Ceremonial Field",
     date: "October 2024",
     alt: "Alekwu dancers and horn blowers in cowrie-beaded regalia on the palace field",
-    src: "https://lh3.googleusercontent.com/aida/AEtjO1XJWX2BzJjvcXeBehZL4wTQ0KIXmN1NC3qyziaE1rMSXS0BcxJz1W3hPGBOv6E9nMiNgoNkqmlyzIDlJf-MWYPvc1CkLIoJjQROin2_CCf0byJDeP-NwxUX_G_eZqY_bEA53p5pe8mmWFi7eMslAjsRomGOcJ_k8yopuxhnGTZheLu6nB-lV92FZdFjHuj2zfQSZVN2iowHw90wL5cB0BxEIpW1wuuVpmewUsCAAp4DRfvm9e7U9Fi1yw",
+    src: "/ph2.jpg",
   },
   {
     ref: "IDM-PH-2023-042",
@@ -90,7 +90,7 @@ const RAW_PLATES: Plate[] = [
     place: "Council Chambers, Otukpo",
     date: "November 2023",
     alt: "Presentation of staffs of authority to district elders in the inner council chamber",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuArsiMRKnCsfSbCz_0eMu8hZP7CEHyZ38y2whI8mGggoF-TKxIG5zEtAw742XV-_J4ugtNYA2RPtaa7_PKHanCE_3irx_LtmHD17udbyyAwdhyEhOrgt7TYkHkZk0zslh-0czQtjBR8JPS68bAciy75JqHQauBb6cXlijN2o5sy3EWJ3pK9RW_O6zSy3xi614KritV5imirgktNAC66CPju3jxagQn-bofQTFHMqBOBejQaSyenE8zr",
+    src: "/ph3.jpg",
   },
   {
     ref: "IDM-PH-2022-001",
@@ -108,7 +108,7 @@ const RAW_PLATES: Plate[] = [
     place: "Sovereign Official Portrait",
     date: "Archival Master File",
     alt: "Ceremonial portrait of HRM Och'Idoma V holding the royal flywhisk upon the mahogany throne",
-    src: "https://lh3.googleusercontent.com/aida/AEtjO1UGeLMZtRIEckgkpqtCE9yAQq_i7cq7EB7IZHH63uoQB5GIkBEvv36XLQCcXqj9JkCa6Xzb6tZJsRuZ3eKZubu-U3M6R9roiWHboWanu4u-ld-ItfE8u_FNPPrt7whsuP8kYjEdAQJPtBRVsERBLcWTduN8PEc4jG7mm6A8c4RHfOe2VCxprZS2xLAY7ROeAyeiq6rJLr4RbDhFloPL1lKUy70p9QhWW-u72wTDSLjhObJBRF3CPeRXlKg",
+    src: "/ph4.jpg",
   },
   {
     ref: "IDM-PH-2024-055",
@@ -126,7 +126,7 @@ const RAW_PLATES: Plate[] = [
     place: "Executive Audience Hall",
     date: "August 2024",
     alt: "Idoma Association UK and Ireland delegates in audience with the paramount ruler",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDPufmlfoooGh0XPuBxwBHEFiaqRFw5SQ5J1YXFgBYbHbPQ-yAS2-VpGZdjVN3JB4y_z_ypBMiNWX0fdEUum1H32KB6-l_M7L14YEKPHgWqCOLNwxUCp3sMdyZmLWUF0q4mgfYveG8jCc1jmrOaLHKh9DT3NxMyZMlk_eUfbd42yYAS2SE6hfq66AuXt9T664RsID7-ACljm2JuzHP7oZLwq_euLQVSxXXD6J55aU_ArmI1V9JxyxEG",
+    src: "/ph1.jpg",
   },
   {
     ref: "IDM-RG-1947-012",
@@ -144,7 +144,7 @@ const RAW_PLATES: Plate[] = [
     place: "Inner Palace Vaults",
     date: "Archival Specimen",
     alt: "Macro study of the bronze royal staff of Agaba'Idu beside antique flywhisks",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBNEl8sueyLtjwiRm0HFiLmiObDgC1_p6bnZv4pRWvX9TwCUxBndSObsANAZqzC9NsYSv0T-5SlVcdNOp38Da9Mn9ZecC-Er-CtbHA1LK6Lgi6TMqoBoAJ4ywB5UNZTgvXseLr92tFOmm9QJ3lKrqYvtcB-4kSsID7LV7NiHxrwdprghhLITcE8S7NZzHntwoPNoGAN_a8OZIihfj9x_z6iTmv5kpUropix6DQXgycJY5DnmEwq59mu",
+    src: "/ph2.jpg",
   },
   {
     ref: "IDM-PH-2025-019",
@@ -162,7 +162,7 @@ const RAW_PLATES: Plate[] = [
     place: "Palace Amphitheater",
     date: "January 2025",
     alt: "Youth choir in matching dress performing before the palace amphitheatre",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDW-ceaKNWH55jxZjqYI6hzSMqoPOV-zrbgR96aPa5LgRuRfXu5V2ACA1l5Bpywqsjdi6Q5J0Gda7NE2cr9YADu4taA0AiNM-fAcFL9uSIklF4fCrRcD0Df8frLIZlZJ8HcKe1v6qZCPFrRyOmoqmfgdBGHwz3Qp21jDXRTaz3YO90qKmLYYfo2tqinsC-EZtFN0thxh2aWsRMTsvbOHewk57FTSuTGJ-bIglMB3k858fP2WJGqkCMn",
+    src: "/ph3.jpg",
   },
   {
     ref: "IDM-PH-2024-089",
@@ -180,7 +180,7 @@ const RAW_PLATES: Plate[] = [
     place: "Agatu Divisional Field",
     date: "September 2024",
     alt: "Cooperative farmers receiving palace agricultural grants at the Agatu divisional field",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCjKBA6rTnMENjNqIByT5GMT7vCanW9l7Rv_v1XGdV2c97m1MG4YlRoxEaYpuvk4aapqPCQg0c91f77WtTTQe0tChq_pnj6voy-d0v3yhU3HopMId-YjIPDZX3XxZ_5YPiwGgipctXeA0f9D-rbRiGsNdmTIyu2JuoOK39CoSnLjO9OLByJPhFLNT5T2v_xkeFY6MkuXrHYQ0QCqxIUn5rift_MmWNUuEcQ2rJOOL-51ksaRULc81yn",
+    src: "/ph4.jpg",
   },
 ];
 
@@ -232,7 +232,7 @@ const RECORDINGS = [
       "His Royal Majesty addresses paramount chieftaincy affairs, agricultural security, educational endowments, and unity among the 22 Idoma chiefdoms.",
     holding: "Official Broadcast",
     alt: "Still frame from the televised State of the Kingdom address",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuAqUzssWP-sbEvnKqVuqoOVaklrC5c0WM8BVq_gNYL-wqKaLHJXeowkZvUfxdHI7LTsx2S0zPAGkkDD43mOCPry32UA_VkKt2gG-IfhBELhRl9a9YdfvH040UE_rTBpFI6NWhBZX-wppE4sfh8Zvqy2VxJf8m3bMoz8mEi3LDE4CbLcFFAvK_IGe9Aw82iwlwE42TCHgbqA9oJ7CpJf2oBgyyCd70eExeGEv6qiB9Pv5toXLIXZboGE",
+    src: "/ph1.jpg",
   },
   {
     ref: "IDM-AV-2026-001",
@@ -247,7 +247,7 @@ const RECORDINGS = [
       "An authoritative investigative visual chronicle detailing the gazetting of the Paramount Stool in 1926 and the unifying journey of the Apa kingdom.",
     holding: "Archival Production",
     alt: "Film still from the centenary documentary on Idoma consolidation",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuBcyrL8DTbiu5kRFkSRm4Nz2cmCuphvP7_nR1jGcohY6mpPgUtKdtiDNJDLRGuHL8y-2Qd9V1sgEIdx8MXTr2uMWRnw6frB-bl_FsNA6y5cyuL2j65X-eaXCVfRZVRPf3xYIGcGqWBXJ4jGqx22Eikje5OWGMuu7KTjN7RXB5A03L9LIzax-lO35zjP32fpnsCNNMoEYseARTYQC8m6kgTkeubN7HGRxk_3oz1a3O2Za-ZZjSrvIKWc",
+    src: "/ph2.jpg",
   },
   {
     ref: "IDM-AV-1988-047",
@@ -262,7 +262,7 @@ const RECORDINGS = [
       "Raw recordings of the ancient royal horn praise poets and sacred percussion invocations performed exclusively for the Paramount Stool.",
     holding: "Restored Mono Master",
     alt: "Traditional Idoma horn trumpeters and drummers mid-performance",
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuByyBzd5PqG2rMwThabHlUot3qYqWYXaUbrVK-COy2CZ7A3D8cotGFnUqTE1BGYAFYZCVVDpqvZ2IhyCvrwnINMd2oa_HUuvM5KMt48nexOSTj44iaonbgnMXZfrtKOvvWJu4ocPbqw_bMRpQ6C1Wa3qc4TBNQLBaQVx9kC7WceswR10H3_BtMxCTeX27CdR_Y3NAd68wcXIwHsAZh52cbOGuC3iFQkKvrr2cGwM1vpy4rJG0fbKrZn",
+    src: "/ph3.jpg",
   },
 ];
 

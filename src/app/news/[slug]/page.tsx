@@ -171,7 +171,7 @@ export default function GazetteDetail() {
                 alt="Historical conclave of traditional elders and council chiefs of the Idoma Kingdom gathered in Otukpo Palace"
                 className="object-cover object-center transform hover:scale-[1.01] transition-transform duration-500"
                 src={cdn(
-                  "https://lh3.googleusercontent.com/aida/AEtjO1WDVLT-BKgsgtGy9AMtR3yhb0MZQchBOffI-_hTSKQX09OS3kgue8Ls8rtlaQDV3EHEpqc8tXVmE3oKK9kghu9Qni4fJUZS-yqOgAL4bsEddgHeDF14eyMQejQ0X-8OQH5ANTsnc32tPMEoBi03N5YeW3Vgh-oaJJFEu0z1JqMrUAoBgSxFLY1emKmCuL4jnRpdzak9fF_xm9T7y_1DkVOPp3uN7EXJ99JITfxJUvGOe6Nv12ntIldacHI"
+                  "/ph4.jpg"
                 )}
                 fill
                 sizes="(max-width: 1240px) 100vw, 1200px"
@@ -317,7 +317,7 @@ export default function GazetteDetail() {
                     alt="Idoma cultural dancers and elders celebrating traditional heritage during palace convocation"
                     className="object-cover object-center"
                     src={cdn(
-                      "https://lh3.googleusercontent.com/aida/AEtjO1XJWX2BzJjvcXeBehZL4wTQ0KIXmN1NC3qyziaE1rMSXS0BcxJz1W3hPGBOv6E9nMiNgoNkqmlyzIDlJf-MWYPvc1CkLIoJjQROin2_CCf0byJDeP-NwxUX_G_eZqY_bEA53p5pe8mmWFi7eMslAjsRomGOcJ_k8yopuxhnGTZheLu6nB-lV92FZdFjHuj2zfQSZVN2iowHw90wL5cB0BxEIpW1wuuVpmewUsCAAp4DRfvm9e7U9Fi1yw"
+                      "/ph1.jpg"
                     )}
                     fill
                     sizes="(max-width: 1024px) 100vw, 33vw"

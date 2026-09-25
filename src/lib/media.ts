@@ -40,7 +40,10 @@ const CDN = "https://lh3.googleusercontent.com/aida-public/";
  *
  * Idempotent — a URL that already carries a size parameter is returned untouched.
  */
-export const cdn = (url: string) => (/=[\w-]+$/.test(url) ? url : `${url}=s0`);
+export const cdn = (url: string) => {
+  if (!url.startsWith('http')) return url;
+  return /=[\w-]+$/.test(url) ? url : `${url}=s0`;
+};
 
 const master = (id: string) => cdn(`${CDN}${id}`);
 

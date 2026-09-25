@@ -16,7 +16,7 @@ const notices = [
     excerpt:
       "The Palace Educational Trust Fund concludes its fourth annual merit-based selection cycle, granting comprehensive university tuition sponsorships across STEM and cultural humanities disciplines.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDFOmn1tjDkLys3yhhoaq36U6jvE5msbb0OdZ03B3c2xVYnWKJy_q1XFZpol9Cz4NjxpV9jkZ4Q_q7ffmwDd112r24BdyNL3uGl_a5ut0PGJ8WLjmlbhfbKr7Qy1lU5lfIqOwftZo02SmUrf2QZLvaaeNPzt3mZnngOh34DNpP7IupT2Z_ixEkH_eZaUvGyEnBKngBHT0EqBStgBRmKfnqWJPweHP2sRunsArRvNLr2NzRQXFAjtbC4",
+      "/ph1.jpg",
     source: "Otukpo Administrative Registry",
     slug: "educational-endowment-fund",
   },
@@ -30,7 +30,7 @@ const notices = [
     excerpt:
       "The Palace Directorate of Culture outlines security logistics, artisan entry criteria, and historical display curation for the grand bicentennial cultural gathering scheduled for Easter season.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAMi6a6v7VMGnKYZTtT7OI5sX7Wa6JftQFXyDuILUyijvEZcKcTkz232ScjXuIdg5mgaNuOzRHNatwG1HHyOWUjz6lOgweG0cfycmpr2ororZ8WJ8s6NyLkmM6zUjy-Sp27VvWjkI1FbuW8lnJTMUVCtnyz_BM7SPwNPRAYDWeCvOJw-OXJjO1XcBIFoMx82ULpmMPZSBoQf4WMLhQbfv7CfLolTUECv7vMAR-gSiYdkNqvQm_6b6Ob",
+      "/ph2.jpg",
     source: "Culture & Heritage Dept",
     slug: "otukpo-royal-arts-heritage-exposition",
   },
@@ -44,7 +44,7 @@ const notices = [
     excerpt:
       "A formal royal advisory restricting uncontrolled industrial sand dredging and mandating buffer-zone re-vegetation across riparian agrarian chiefdoms in Benue South.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuA3-t-wLBkecUmAxaXZ-D2OF4HQDjwEFXEWnSmdBElM30ftDrKRZ13q9HOsOL97f5NGgpmQuRtSn5cOI4Dn7tgpYvP4n8ipctoR_MjXgbw_XfZsb-uP7Dsk9zEMLUk8Q6KONzvY4lG-BHQpl2NtSk_ezEyyj6cXG43jfQwg_5Uv-ToXYpHDdFz8bmvHAcsYv2qhqnLHfdMaK3cTFnjuJzWXatBofVLTLbA8OmXLGmCisdJaAp-g9_Mq",
+      "/ph3.jpg",
     source: "Palace Secretariat",
     slug: "environmental-protection-river-benue",
   },
@@ -57,7 +57,7 @@ const notices = [
     excerpt:
       "The Paramount Ruler welcomes expatriate professionals in healthcare and infrastructure technology to finalize the establishment of a specialized mobile clinics initiative across nine local governments.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCybaN4Cu6L8cOlEY1rSP1iKOHxOqpqfrWMmvnNNi9Qsy5eoZmoriiqwwxastniZ9NmckxvGx0Kj8PbEfaqwYUCVrirrdxrSJmoHP3aIrDSAYBHgGl0g-PsZnL-N50lYhLcBDMM3CvntFcUBqsN-hA3VUwQitLLHxhWz3qHEdQn7IfseN04Kaez-iIhQRC0qZsWpzCxqWl8wH0EA6X-gmzlbs9ByYQZby7tsfpcZ7duMNEeezGyHVgW",
+      "/ph4.jpg",
     source: "Palace Protocol Bureau",
     slug: "uk-diaspora-chapter-delegation",
   },
@@ -71,7 +71,7 @@ const notices = [
     excerpt:
       "Following consensus agreements mediated under royal charter, the Council codifies shared grazing timelines and seasonal harvest pathways to protect rural farming livelihoods.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuDZ6pPOPAFpeBiPr2ldzF7IbOBR3hN_4Bj190n8eYkYSgSBs3wcKkWUlVlrA7YCk9zSfhMcQHsOFQ3DA77jsr0194FkUE0Sd8QZpfxpb4q6kOpwOaH0jpKCrafx5Ezw70xM1AAUkePkTqGmyldJRC0aCBcBtDBjp-8phg3TuJvd7hay7jTqNVRFuMhBqdjmA1YVeLzjeTmrAjE7SuA9MdeQl1TKTuFJoDOLMvS5njbiUUq7yoFaGOJT",
+      "/ph1.jpg",
     source: "High Council Judiciary",
     slug: "resolution-dispute-settlement-apa-agatu",
   },
@@ -85,7 +85,7 @@ const notices = [
     excerpt:
       "Royal assent is granted to the committee overseeing capital construction for the Otukpo Royal Museum, Archival Library, and traditional crafts incubation complex.",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB4f5iJqBE-w2_QuML-eIVE4RqBDmZzrmQLx_9FveCcCK5hSO9fLZq5TB9LDgmkb2MgTD4qFnsmGUdIEGVz9vIRa3Qcr_7_3l2lK4AFGEQfmHchC5zz0ibNIiOARmrvlCWEDAyJqlwlhf_NUs1UAbFm-7hG7-NKScoAQmEgCcnrD-FCPNTx80C23Dlq-eqaOCkp4R3BCPqNc2M_BlvG7H1zmd14Ovo5aep_KlKHbmhmL2ZGYpSEujqa",
+      "/ph2.jpg",
     source: "Centenary Commission",
     slug: "advisory-board-centenary-foundation",
   },
@@ -222,7 +222,7 @@ export default function News() {
               className="object-cover object-center"
               alt="Dignified sovereign assembly of the Och'Idoma royal court with elders, traditional rulers, and cultural drummers in vibrant red and black woven Idoma ceremonial attire, sitting under an embroidered palace pavilion canopy in the sun-drenched Otukpo palace courtyard."
               src={cdn(
-                "https://lh3.googleusercontent.com/aida-public/AB6AXuC76x6KfF6Onk78jP8CGhukZte4sg2HrfE7e-DowQeXb_rE3DRlNmYKIp0Ysl5EyxSGy_hNJe0B6aHCSSmBGBBfwbG0ip5BaJnYk07U0I4I73Q_nxXfhVA7wnTAshHDmZVe2k6Dn4zUCWYbDfOMQ7o6040ezPt5ceVEFK1JVjqwX0U2BTEANLjAafjEt502n6v4IEo3j5oGb2enbGZvAj8y8taFbz5sL7Udl3EM5hm3l2DDOJ3scqPp",
+                "/ph3.jpg",
               )}
               fill
               sizes="(max-width: 1024px) 100vw, 600px"

@@ -292,7 +292,7 @@ export default function Giving() {
                 alt="Benue River basin flood plains"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 src={cdn(
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuBQhO6YCDgBqiRK7Mey18pn2hGTLs6UsuR3__wlO8uoNIpf7VR9k5_lsKCTN-Xah5k55-h_wmGwrhRBLQd7Z-jykg1upDNoMmSu9tTztehFVhhNte7FhnYkLLvBR_2RA7p3JD-csyQuGGvcewkHT_xejGoVQ9Q37pic2L1ntXfNbiW-0kqpFny59tC4h8YsTF5FLCY_bllUULf9jKhpOkB7xesgMGEVo9_tTTPQKj994igrFYa0DNGu",
+                  "/ph4.jpg",
                 )}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 380px"
@@ -377,7 +377,7 @@ export default function Giving() {
                 alt="Rural clinic ward"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 src={cdn(
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuCWJ02Hc1NqnKxaL9p95qJSJc5JnVzqnuEr7NshFjauMUIvesKV2WtgYio-95vHsYF2Ni8IpjPVxWAVRRWIAfqn_9exV6Pb9vCrwltnO5TuZMVZfo71nGXiWAASg8zX3_uJ8oLwQV7cLxOG-VV6zweUzluGoFb7HxdVii_DgiKlsKDWX1lfDZ0_bjGhEdPgTJtQixr4qdExKt0ZxWon2PLz4fwioYaOh9ZXoemICamBcBBV_5QyIn-Z",
+                  "/ph1.jpg",
                 )}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 380px"
@@ -461,7 +461,7 @@ export default function Giving() {
                 alt="Apprentices working in a digital fabrication workshop"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
                 src={cdn(
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuA3oDSOPcndYh3T_ZeTkLBMBInybcw3bGGei-GWpz7PM6foghSPVSTpHMESJLR4_2QrOdXhDXaThUiwXsWcFmHPS3kvvRlwelYNVyjeoVTckpqs5v6iTdivr4o6d4YR_ypA2H2SfRlCEzGvYeH-i7yoeLD6XQi-QZuJCtlsBI27h8vWHw74cUf86TtaBXBKlYdfamqoTPpXmkAz6Kf6fFgwHs2eCSrdfxC99T6ez_5US-vlVTpERxYV",
+                  "/ph2.jpg",
                 )}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 380px"

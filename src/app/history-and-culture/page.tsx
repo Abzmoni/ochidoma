@@ -49,7 +49,7 @@ export default function HistoryAndCulture() {
             alt="Archival photograph of Och'Idoma and council of elders in ceremonial attire"
             className="object-cover object-center opacity-40 mix-blend-luminosity filter contrast-125 scale-105"
             src={cdn(
-              "https://lh3.googleusercontent.com/aida-public/AB6AXuB0BkA7GA8QFfLseuoOyoXGgegeqy40xQb8aX0gtJSu0ZDaBkIFh8JB2zbm6q89VPYEdCK27wnsIXLipCMjYO6bGonXWubZnkIqCPddDSg4YY19NgzD1C97ayW29UzA3Wpax-Xd7pN-u5h-WOXJbRa9Yq2llD6Uvt5a7qj_f2tE0an8s2RUNKnrq6ztzi8BR9Y8pXXgK_-mby-Ktl0Yx9-bShmoqgiuJ9mBWAlIZYdvq6JL8JNmYbBl"
+              "/ph3.jpg"
             )}
             fill
             sizes="100vw"
@@ -301,7 +301,7 @@ export default function HistoryAndCulture() {
                 alt="Vibrant Alekwu festival and centenary celebration in Idoma land featuring royal dancers and drummers"
                 className="object-cover object-center scale-100 hover:scale-105 transition-transform duration-700"
                 src={cdn(
-                  "https://lh3.googleusercontent.com/aida-public/AB6AXuB_EPNnFqlras_OS8AFiXSYs70GHvVH6ccGQr5yZPYm0Tm2_yowCAOnpmHUHn0p59qb4Cih_S-aGSyaFr0vmSOKwEAiq8e4KKYsHLCBjD6CZUdjF8PtKznAz2A8-XpkKW7VydbJvyCLTMoAyABMTYWZ2JfJXPsaFT3LHz0GiAwIUMcLiE_ph0k-NA8anWM2YpHCf9C5F1ioa3OXZ04WdCBlMyfgh0rVvm0asn6tBbpaxtjd0E6drTUp"
+                  "/ph4.jpg"
                 )}
                 fill
                 sizes="(max-width: 1024px) 100vw, 42vw"
