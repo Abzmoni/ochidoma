@@ -1,3 +1,10 @@
+import heroImg from "@/assets/images/hero-ochidoma-v.jpg";
+import heritage1 from "@/assets/images/heritage-01.jpg";
+import heritage2 from "@/assets/images/heritage-02.jpg";
+import heritage3 from "@/assets/images/heritage-03.jpg";
+import heritage4 from "@/assets/images/heritage-04.jpg";
+import type { StaticImageData } from "next/image";
+
 /**
  * Landing-page photography, resolved in one place — plus the `cdn()` normaliser
  * the rest of the site's pages use on their own inline Stitch URLs.
@@ -38,7 +45,7 @@ export const cdn = (url: string) => (/=[\w-]+$/.test(url) ? url : `${url}=s0`);
 const master = (id: string) => cdn(`${CDN}${id}`);
 
 export type LandingImage = {
-  src: string;
+  src: string | StaticImageData;
   /**
    * Frame's dominant tone, painted on the container while the image loads.
    *
@@ -54,9 +61,7 @@ export type LandingImage = {
 
 /** Swap for: import heroImg from "@/assets/images/hero-ochidoma-v.jpg" */
 export const heroImage: LandingImage = {
-  src: master(
-    "AB6AXuAV6fWi7e1YLOuDBiHsycEC24eDFJrmgJCa5-2Kf2kfHzYLxA_lC9RHPUrzHLa-JAf9hg2yUYAzHV0Q1nYROd7LJkp4U_uqK7O9w2tW18yc7UnDbrDBZdW5InX-kJh4JhVj46DBERvlPZbSLNZFPUFNp7kzdlu-Dxib9yku-yS6fahJagSbUcN_xrhrhtUJIIEcKwvCWOUQV30X9FQTdxAzBBx4yfbNmC4X_CMKXY5JbT7bnbdUr-Z6"
-  ),
+  src: heroImg,
   tone: "#2a1d16",
 };
 
@@ -73,36 +78,28 @@ export const heritageImages: HeritageImage[] = [
     n: "01",
     label: "Royal Court Regalia & Flywhisks",
     alt: "Intricate ceremonial regalia and beaded flywhisk of the Idoma paramount ruler",
-    src: master(
-      "AB6AXuB10zNffeuNPMAu-pwDNsrfaWlqT6FZNvJgvMZD8UfKw7JxwdjHb6P9SZGhGyrOaz2pqLNiMo4RagjynUt29S7JN8d6zS7yQRPJb2-R-QTHTDGsBu5OPx8MwbJu-9UwL1hf-kQ7GFZQQRtVPAzkXV_J_gdzaGfe73TOvO1EKw2rjRvHchsaLSI_6MmTNS9xy8KXYhDyAbTTIBDHgc6k9p6JC2ioZVVTh0sa2FPOSWROaNa6lZEiLvtL"
-    ),
+    src: heritage1,
     tone: "#4a371d",
   },
   {
     n: "02",
     label: "Apa Traditional Woven Cloth",
     alt: "Close-up of authentic handwoven Apa textile in Idoma red and black",
-    src: master(
-      "AB6AXuAjG5z7xjsdDpOVhj0AWnyvzzELyRJfmFrH16TwurzCtA0ZxyB61LvbUxqgBMlnPznsX09dwu3z0pVj1_GnWT2WYfJGA-hltUBjDr1KUgG635X7rZVoVTzpH_s3flyNAncblRMtPKyLPUwg6GBAQSnZ_Ll4woxK2JC_l_50ykZB7A18NHymmLFxjmelehpH87A1YETg9gYKEy4aHEgkRCLuRMeh0Nz_xqZtWJK1KduGfuDD-M7Z6d60"
-    ),
+    src: heritage2,
     tone: "#5c1a1f",
   },
   {
     n: "03",
     label: "Palace Council in Session",
     alt: "Assembly of the traditional Idoma royal council of elders in session",
-    src: master(
-      "AB6AXuB5F19ouLW5U_AMmdLly7cfAuiLu_jW9mcUtHiUGMFj3hm5ASBSX0HwVO84ZUB9rlJwCTDFVuxVP_noeS18NwP1LL5SAr73m_aVBHopL67BrdOcS4-KriNJqnHG0Y_tM0hzwqUOlfY-3kR6fyw9GcF1eXrJwtk7b6NYDGmUSdC0_X53zHYtOKKXrcfRYQnVFUGw4ygFKD98x31y0lhpvzsNSBQ3ToeazQhmkgLIQf1tWL46BvN9KF7L"
-    ),
+    src: heritage3,
     tone: "#3b3026",
   },
   {
     n: "04",
     label: "Sacred Alekwu Cultural Performance",
     alt: "Traditional sacred Alekwu ancestral masquerade performance",
-    src: master(
-      "AB6AXuAymxQNIzTxY23KxPWL3xbFJa4BBKESYc8mnmBnTfle7L_pZjHxUNNs0NaSbRxNJkI7s_NO0oybVfJKCrQlVk30qaRSg4EhzGfgB13piW04myW6bkc0E-9ePTF6Q8Qi0yZavJisW_bsRgdgkMlaE6o3e7wr7QdTAP9cKRdhBMv_ilMufDYrqh2ADu3dnq7sLKbtkMbK1wHNweA3o67VAgKOuItaFU1REABFeLal99e0PEaJ_ySCi5jh"
-    ),
+    src: heritage4,
     tone: "#44301d",
   },
 ];
@@ -113,7 +110,7 @@ export const heritageImages: HeritageImage[] = [
  * WhatsApp and X are where most of this site's statements actually get read.
  */
 export const ogImage = {
-  url: heroImage.src,
+  url: typeof heroImage.src === "string" ? heroImage.src : heroImage.src.src,
   width: 1376,
   height: 768,
   alt: "His Royal Majesty Agaba'Idu Och'Idoma V in full ceremonial regalia",
