@@ -27,8 +27,6 @@ import type { StaticImageData } from "next/image";
  * launch — same swap, same one file.
  */
 
-const CDN = "https://lh3.googleusercontent.com/aida-public/";
-
 /**
  * Normalises a Stitch CDN URL to its unresized master.
  *
@@ -41,11 +39,9 @@ const CDN = "https://lh3.googleusercontent.com/aida-public/";
  * Idempotent — a URL that already carries a size parameter is returned untouched.
  */
 export const cdn = (url: string) => {
-  if (!url.startsWith('http')) return url;
+  if (!url.startsWith("http")) return url;
   return /=[\w-]+$/.test(url) ? url : `${url}=s0`;
 };
-
-const master = (id: string) => cdn(`${CDN}${id}`);
 
 export type LandingImage = {
   src: string | StaticImageData;
@@ -79,29 +75,29 @@ export type HeritageImage = LandingImage & {
 export const heritageImages: HeritageImage[] = [
   {
     n: "01",
-    label: "Royal Court Regalia & Flywhisks",
-    alt: "Intricate ceremonial regalia and beaded flywhisk of the Idoma paramount ruler",
+    label: "Royal Regalia",
+    alt: "A seated traditional ruler wearing a beaded crown and ceremonial regalia",
     src: heritage1,
     tone: "#4a371d",
   },
   {
     n: "02",
-    label: "Apa Traditional Woven Cloth",
-    alt: "Close-up of authentic handwoven Apa textile in Idoma red and black",
+    label: "Palace Grounds",
+    alt: "A white palace building with landscaped grounds",
     src: heritage2,
     tone: "#5c1a1f",
   },
   {
     n: "03",
-    label: "Palace Council in Session",
-    alt: "Assembly of the traditional Idoma royal council of elders in session",
+    label: "Ceremonial Gathering",
+    alt: "A traditional ruler in red and black regalia surrounded by attendees",
     src: heritage3,
     tone: "#3b3026",
   },
   {
     n: "04",
-    label: "Sacred Alekwu Cultural Performance",
-    alt: "Traditional sacred Alekwu ancestral masquerade performance",
+    label: "Palace Address",
+    alt: "A seated traditional ruler speaking into a microphone",
     src: heritage4,
     tone: "#44301d",
   },

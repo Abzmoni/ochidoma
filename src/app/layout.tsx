@@ -3,6 +3,7 @@ import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContentProtection from "@/components/ContentProtection";
 import { ogImage } from "@/lib/media";
 
 const playfairDisplay = Playfair_Display({
@@ -21,8 +22,7 @@ const sourceSans3 = Source_Sans_3({
   display: "swap",
 });
 
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://ochidoma.org";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ochidoma.org";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -82,17 +82,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${playfairDisplay.variable} ${sourceSans3.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-surface text-on-surface font-body">
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
-          precedence="default"
-        />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-space-sm focus:left-space-sm focus:z-[60] focus:px-space-lg focus:py-space-sm focus:rounded-lg focus:bg-royal-gold focus:text-rich-black focus:font-body focus:text-[12px] focus:font-bold focus:uppercase focus:tracking-wider"
         >
           Skip to content
         </a>
+        <ContentProtection />
         <Header />
         <main id="main" className="flex-1 w-full pt-[var(--header-h)]">
           {children}

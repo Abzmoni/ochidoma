@@ -265,7 +265,7 @@ export default function Diaspora() {
                 className="group flex flex-col justify-between bg-surface-container-low rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all duration-200 border border-outline/10"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-space-md">
+                  <div className="flex flex-wrap gap-2 items-center justify-between mb-space-md">
                     <span className="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container rounded font-body text-[11px] font-semibold text-text-primary">
                       <span className="material-symbols-outlined text-[16px] text-tertiary">
                         location_on
