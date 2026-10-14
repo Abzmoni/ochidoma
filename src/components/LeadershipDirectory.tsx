@@ -11,7 +11,7 @@ export default function LeadershipDirectory() {
   const results = leaders.filter(
     (leader) =>
       (rank === "All leadership" || leader.rank === rank) &&
-      `${leader.name} ${leader.title} ${leader.community} ${leader.rank}`
+      `${leader.name} ${leader.title} ${leader.community} ${leader.area} ${leader.rank}`
         .toLowerCase()
         .includes(query.trim().toLowerCase()),
   );
@@ -38,7 +38,7 @@ export default function LeadershipDirectory() {
       </div>
       <p className="small-note" role="status">
         {results.length} {results.length === 1 ? "profile" : "profiles"} shown ·
-        Preview entries are not an official roster.
+        Names recorded in the June 2024 programme.
       </p>
       <div className="leadership-grid">
         {results.map((leader) => (
@@ -52,12 +52,12 @@ export default function LeadershipDirectory() {
               <span>{leader.rank}</span>
             </div>
             <div className="card-body">
-              <span className="eyebrow">
-                {leader.confirmed ? "The paramount stool" : "Profile preview"}
-              </span>
+              <span className="eyebrow">2024 programme record</span>
               <h2>{leader.name}</h2>
               <p>{leader.title}</p>
-              <p className="small-note">{leader.community}</p>
+              <p className="small-note">
+                {leader.community} · {leader.area}
+              </p>
               <span className="text-link">
                 View profile <span aria-hidden="true">↗</span>
               </span>
@@ -67,8 +67,16 @@ export default function LeadershipDirectory() {
       </div>
       {!results.length && (
         <div className="empty-state">
-          <h2>No matching profiles</h2>
-          <p>Try another name, community or leadership class.</p>
+          <h2>
+            {rank === "Second class" || rank === "Community leadership"
+              ? "This part of the record is still to come"
+              : "No matching profiles"}
+          </h2>
+          <p>
+            {rank === "Second class" || rank === "Community leadership"
+              ? "The supplied 2024 pages do not include this roster. Names and individual profiles will be added when the Palace Secretariat supplies the record."
+              : "Try another name, community or leadership class."}
+          </p>
           <button
             className="palace-button secondary"
             onClick={() => {

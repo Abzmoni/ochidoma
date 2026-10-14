@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { leaders } from "@/lib/leadership";
 import RoyalCrest from "@/components/RoyalCrest";
 import ShareLink from "@/components/ShareLink";
-
 export function generateStaticParams() {
   return leaders.map(({ slug }) => ({ slug }));
 }
@@ -14,9 +13,10 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const leader = leaders.find((item) => item.slug === slug);
+  const l = leaders.find((e) => e.slug === slug);
   return {
-    title: leader ? `${leader.name} · ${leader.rank}` : "Profile not found",
+    title: l ? `${l.name} · ${l.rank}` : "Profile not found",
+    description: l?.biography,
   };
 }
 export default async function LeaderPage({
@@ -25,8 +25,9 @@ export default async function LeaderPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const leader = leaders.find((item) => item.slug === slug);
-  if (!leader) notFound();
+  const l = leaders.find((e) => e.slug === slug);
+  if (!l) notFound();
+  const peers = leaders.filter((e) => e.rank === l.rank && e.slug !== slug);
   return (
     <div className="palace-container section-space">
       <Link className="text-link" href="/traditional-council">
@@ -35,54 +36,65 @@ export default async function LeaderPage({
       <div className="profile-layout">
         <aside className="profile-seal">
           <RoyalCrest className="w-36 h-36" />
-          <span className="eyebrow">{leader.rank}</span>
-          <p>
-            {leader.confirmed
-              ? "The paramount stool"
-              : "Official portrait pending"}
-          </p>
+          <span className="eyebrow">{l.rank}</span>
+          <p>Idoma traditional institution</p>
+          <span className="archive-badge">Recorded June 2024</span>
         </aside>
         <article>
-          <span className="eyebrow">{leader.title}</span>
-          <h1 className="editorial-title">{leader.name}</h1>
-          <p className="intro-copy">{leader.community}</p>
-          {!leader.confirmed && (
-            <div className="editorial-note">
-              Profile preview · This is a page template, not an identified
-              officeholder. Approved details will replace this entry.
-            </div>
-          )}
-          <h2 className="subheading">About the office</h2>
-          <p>{leader.biography}</p>
+          <span className="eyebrow">{l.title}</span>
+          <h1 className="editorial-title">{l.name}</h1>
+          <p className="intro-copy">{l.community}</p>
+          <div className="editorial-note">
+            From the 2024 coronation anniversary programme. This entry records
+            the published roster; current officeholder updates await the Palace
+            Secretariat.
+          </div>
+          <h2 className="subheading">About this record</h2>
+          <p>{l.biography}</p>
           <div className="profile-facts">
             <div>
               <span>Classification</span>
-              <strong>{leader.rank}</strong>
+              <strong>{l.rank}</strong>
             </div>
             <div>
-              <span>Office & community enquiries</span>
-              <Link href="/contact">Contact the Palace Secretariat ↗</Link>
+              <span>Area in the programme</span>
+              <strong>{l.area}</strong>
+            </div>
+            <div>
+              <span>Community / territory</span>
+              <strong>{l.community}</strong>
             </div>
           </div>
-          <h2 className="subheading">News & engagements</h2>
-          <p className="small-note">
-            No approved announcements have been added to this profile yet.
-          </p>
-          <h2 className="subheading">Photographs & videos</h2>
-          <p className="small-note">
-            Media from this office will appear here once approved for
-            publication.
-          </p>
           <div className="button-row">
-            <Link
-              className="palace-button"
-              href={leader.confirmed ? "/the-throne" : "/traditional-council"}
-            >
-              {leader.confirmed ? "Explore the throne" : "Explore the council"}{" "}
-              →
+            <Link className="palace-button" href={`/archive/${l.sourceId}`}>
+              View the source record ↗
             </Link>
-            <ShareLink title={leader.name} />
+            <ShareLink title={l.name} />
           </div>
+          <h2 className="subheading">Office & community enquiries</h2>
+          <p>
+            For current information, biography updates or enquiries relating to
+            this office, contact the Palace Secretariat.
+          </p>
+          <Link className="text-link" href="/contact">
+            Contact the palace →
+          </Link>
+          {peers.length > 0 && (
+            <div className="article-related">
+              <h2 className="subheading">More {l.rank.toLowerCase()} chiefs</h2>
+              {peers.slice(0, 3).map((e) => (
+                <Link
+                  className="related-story"
+                  href={`/traditional-council/${e.slug}`}
+                  key={e.slug}
+                >
+                  <span>{e.community}</span>
+                  <h3>{e.name}</h3>
+                  <span>→</span>
+                </Link>
+              ))}
+            </div>
+          )}
         </article>
       </div>
     </div>

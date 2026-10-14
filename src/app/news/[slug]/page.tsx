@@ -39,7 +39,7 @@ export default async function Article({
       </Link>
       <article className="article-layout">
         <header>
-          <span className="eyebrow">{item.categoryLabel} · Sample story</span>
+          <span className="eyebrow">{item.categoryLabel} · 2024 record</span>
           <h1 className="editorial-title">{item.title}</h1>
           <p className="small-note">
             {item.date} · {item.source}
@@ -48,17 +48,32 @@ export default async function Article({
         <div className="article-image">
           <Image
             src={item.image}
-            alt="Illustrative photography for this prototype story"
+            alt={`Programme source: ${item.title}`}
             fill
             sizes="(max-width: 900px) 100vw, 850px"
             className="object-cover"
           />
-          <span className="photo-credit">Prototype imagery</span>
+          <span className="photo-credit">
+            2024 programme · Photographed source
+          </span>
         </div>
         <p className="intro-copy">{item.excerpt}</p>
+        {item.body.map((paragraph) => (
+          <p className="article-paragraph" key={paragraph}>
+            {paragraph}
+          </p>
+        ))}
         <div className="editorial-note">
-          This is sample content retained from the design prototype. The full
-          palace-approved report will appear here before publication.
+          Historical summary based on the supplied programme. Offices and
+          scheduled activities reflect the 2024 publication.
+        </div>
+        <div className="button-row">
+          <Link className="palace-button" href={`/archive/${item.sourceId}`}>
+            Read the source record ↗
+          </Link>
+          <Link className="text-link" href="/archive#collection">
+            Browse the complete archive →
+          </Link>
         </div>
         <ShareLink title={item.title} />
         <div className="article-related">

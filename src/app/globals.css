@@ -1374,3 +1374,253 @@ textarea {
   font-display: swap;
   src: url("/fonts/material-symbols-outlined.ttf") format("truetype");
 }
+/* Source-led palace archive */
+.archive-feature {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) 1.3fr;
+  gap: clamp(28px, 6vw, 88px);
+  align-items: center;
+}
+.archive-cover {
+  background: #e9e1d4;
+  padding: 20px;
+}
+.archive-cover img {
+  width: 100%;
+  height: auto;
+  max-height: 530px;
+  object-fit: contain;
+}
+.archive-feature p {
+  margin: 20px 0;
+}
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.archive-card {
+  background: #fffdf8;
+  border: 1px solid #e0d8c9;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.archive-card:hover {
+  transform: translateY(-4px);
+}
+.archive-thumb {
+  position: relative;
+  height: 260px;
+  background: #e7e0d5;
+  border-bottom: 1px solid #ddd2c1;
+}
+.archive-card h2 {
+  font-family: var(--font-heading);
+  font-size: 25px;
+  line-height: 1.25;
+  margin: 12px 0;
+}
+.archive-card .card-body {
+  flex: 1;
+}
+.archive-card p {
+  font-size: 15px;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+.archive-record {
+  max-width: 850px;
+  margin: 48px auto 0;
+}
+.archive-record header p {
+  margin: 24px 0;
+}
+.source-page {
+  margin: 20px 0;
+  border: 1px solid #d9cebb;
+  background: #fffdf8;
+}
+.source-page summary {
+  padding: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.source-page figure {
+  padding: 12px;
+  background: #e8e1d5;
+}
+.source-page img {
+  width: 100%;
+  height: auto;
+}
+.source-page figcaption {
+  padding: 14px 4px;
+  font-size: 13px;
+  color: #514c43;
+}
+.archive-badge {
+  display: inline-block;
+  padding: 8px 12px;
+  border: 1px solid #b69c6d;
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+.history-timeline article {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 40px;
+  border-top: 1px solid #d6cbbb;
+  padding: 36px 0;
+}
+.history-timeline h3 {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  margin: 10px 0;
+}
+.history-timeline p {
+  max-width: 640px;
+  line-height: 1.8;
+}
+.timeline-date {
+  color: #7c2433;
+  font-weight: 600;
+}
+.article-paragraph {
+  margin: 24px 0;
+  line-height: 1.85;
+}
+.archive-record .contact-band {
+  margin-top: 48px;
+}
+@media (max-width: 1000px) {
+  .archive-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 760px) {
+  .archive-feature {
+    grid-template-columns: 1fr;
+  }
+  .archive-cover {
+    max-width: 370px;
+    width: 100%;
+    margin: auto;
+  }
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+  .archive-card {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+  }
+  .archive-thumb {
+    height: 100%;
+    min-height: 180px;
+  }
+  .archive-card h2 {
+    font-size: 22px;
+  }
+  .archive-card .card-body {
+    padding: 20px;
+  }
+  .archive-card p {
+    display: none;
+  }
+  .history-timeline article {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .archive-record {
+    margin-top: 32px;
+  }
+}
+.archive-home-hero {
+  background: radial-gradient(
+    ellipse at 80% 50%,
+    #712d33 0,
+    #3b151d 50%,
+    #211014 100%
+  );
+}
+.hero-source-cover {
+  position: absolute;
+  width: 36%;
+  max-width: 430px;
+  top: calc(var(--header-h) + 55px);
+  bottom: 55px;
+  right: max(6%, calc((100vw - 1200px) / 2));
+  border: 1px solid #bfa57566;
+  background: #21101466;
+  box-shadow: 0 24px 70px #10060866;
+}
+.archive-home-hero .hero-content {
+  position: relative;
+  pointer-events: none;
+}
+.archive-home-hero .hero-content a {
+  pointer-events: auto;
+}
+.archive-home-hero .hero-content h1 {
+  font-size: clamp(43px, 4.7vw, 66px);
+}
+.archive-home-hero .hero-content > p {
+  max-width: 50%;
+}
+.story-image:has(img[src*="coronation-2024"]),
+.feature-photo,
+.throne-photo {
+  background: #e4dbce;
+}
+.throne-photo img {
+  object-fit: contain;
+}
+@media (max-width: 1000px) and (min-width: 761px) {
+  .archive-home-hero .hero-content h1 {
+    font-size: 44px;
+  }
+  .hero-source-cover {
+    right: 4%;
+    width: 34%;
+  }
+  .archive-home-hero .button-row {
+    max-width: 52%;
+  }
+  .archive-home-hero .hero-caption {
+    max-width: 52%;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  .archive-home-hero {
+    height: auto;
+    min-height: 0;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .archive-home-hero .hero-content {
+    order: 0;
+    padding-bottom: 32px;
+  }
+  .archive-home-hero .hero-content > p {
+    max-width: 100%;
+  }
+  .hero-source-cover {
+    position: relative;
+    order: 1;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: calc(100% - 48px);
+    height: 380px;
+    margin: 0 auto;
+  }
+  .archive-home-hero .hero-caption {
+    margin-top: 28px;
+  }
+  .archive-home-hero .hero-content h1 {
+    font-size: clamp(40px, 9vw, 58px);
+  }
+}

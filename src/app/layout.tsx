@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     "IATC",
     "Agaba'Idu",
     "Idoma culture",
-    "Centenary 2026",
+    "Coronation anniversary archive",
   ],
   // Statements from this site are routinely re-shared on WhatsApp and X, where the
   // link preview is often all a reader sees. Worth getting right.

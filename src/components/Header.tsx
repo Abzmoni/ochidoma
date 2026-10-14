@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Heritage", href: "/history-and-culture" },
   { label: "News", href: "/news" },
   { label: "Photos & Videos", href: "/gallery" },
-  { label: "Diaspora", href: "/diaspora" },
+  { label: "Archive", href: "/archive" },
   { label: "Contact", href: "/contact" },
 ];
 

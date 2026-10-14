@@ -1,22 +1,24 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
-import { heritageImages, heroImage } from "@/lib/media";
+import { heritageImages } from "@/lib/media";
+import { archiveImage } from "@/lib/archive";
 import { notices } from "@/lib/news";
 
 export default function Home() {
   return (
     <>
-      <section className="palace-hero">
-        <Image
-          src={heroImage.src}
-          alt="Illustrative royal portrait from the palace design prototype"
-          fill
-          loading="eager"
-          fetchPriority="high"
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="palace-hero-shade" />
+      <section className="palace-hero archive-home-hero">
+        <div className="hero-source-cover">
+          <Image
+            src={archiveImage(18)}
+            alt="The 2024 second coronation anniversary programme of Och’Idoma V"
+            fill
+            loading="eager"
+            fetchPriority="high"
+            sizes="(max-width: 760px) 85vw, 40vw"
+            className="object-contain"
+          />
+        </div>
         <div className="palace-container hero-content">
           <span className="eyebrow">The palace · The council · The people</span>
           <h1>
@@ -34,7 +36,7 @@ export default function Home() {
               Explore our leadership ↗
             </Link>
             <Link href="/news" className="hero-link">
-              Latest from the palace →
+              Explore the palace journal →
             </Link>
           </div>
           <div className="hero-caption">
@@ -45,9 +47,9 @@ export default function Home() {
       </section>
       <div className="news-ribbon">
         <div className="palace-container">
-          <span className="eyebrow">Palace bulletin</span>
+          <span className="eyebrow">From the archive</span>
           <Link href={`/news/${notices[0].slug}`}>{notices[0].title} ↗</Link>
-          <span className="ribbon-label">Sample story</span>
+          <span className="ribbon-label">2024 archive</span>
         </div>
       </div>
       <section className="palace-container section-space">
@@ -79,9 +81,9 @@ export default function Home() {
             },
             {
               n: "03",
-              title: "Our culture, in focus",
-              text: "Explore the photographs, moving images and traditions that tell the story of our people.",
-              href: "/gallery",
+              title: "The palace archive",
+              text: "Read the anniversary programme, biographies, historical records and the stories behind our institution.",
+              href: "/archive",
             },
           ].map((item) => (
             <Link className="gateway" href={item.href} key={item.n}>
@@ -97,14 +99,14 @@ export default function Home() {
         <div className="palace-container council-feature-grid">
           <div className="feature-photo">
             <Image
-              src={heritageImages[2].src}
-              alt="Traditional ruler at a ceremonial gathering"
+              src={archiveImage(7)}
+              alt="Four first-class chiefs pictured and named in the 2024 programme"
               fill
               sizes="(max-width: 760px) 100vw, 50vw"
-              className="object-cover"
+              className="object-contain"
             />
             <span className="photo-credit">
-              Design preview · Illustrative photography
+              Photographs from the 2024 programme
             </span>
           </div>
           <div className="feature-copy">
@@ -143,7 +145,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <span className="eyebrow">The palace journal</span>
-            <h2>News that connects us.</h2>
+            <h2>Stories from our archive.</h2>
           </div>
           <Link className="text-link" href="/news">
             All news & announcements ↗
@@ -155,12 +157,12 @@ export default function Home() {
               <Link href={`/news/${item.slug}`} className="story-image">
                 <Image
                   src={item.image}
-                  alt="Illustrative image for a sample palace story"
+                  alt={`Programme source: ${item.title}`}
                   fill
                   sizes="(max-width: 760px) 100vw, 33vw"
                   className="object-cover"
                 />
-                <span className="image-label">Sample story</span>
+                <span className="image-label">2024 archive</span>
               </Link>
               <div className="card-body">
                 <span className="eyebrow">{item.categoryLabel}</span>
@@ -191,7 +193,7 @@ export default function Home() {
             <Link href="/gallery#photographs" className="media-tile">
               <Image
                 src={heritageImages[1].src}
-                alt="Palace building and landscaped grounds from the design collection"
+                alt={heritageImages[1].alt}
                 fill
                 sizes="(max-width: 760px) 100vw, 60vw"
                 className="object-cover"

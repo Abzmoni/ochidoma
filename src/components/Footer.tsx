@@ -7,6 +7,7 @@ const columns = [
       ["The Och’Idoma", "/the-throne"],
       ["Traditional council & chiefs", "/traditional-council"],
       ["History & culture", "/history-and-culture"],
+      ["Anniversary archive", "/archive"],
     ],
   },
   {
@@ -71,8 +72,8 @@ export default function Footer() {
           <p>Content and media reuse by permission.</p>
         </div>
         <p className="prototype-note">
-          Design prototype · Sample stories, imagery and profile previews await
-          palace approval.
+          Archive content follows the June 2024 programme. Current appointments
+          and new announcements await Secretariat updates.
         </p>
       </div>
     </footer>

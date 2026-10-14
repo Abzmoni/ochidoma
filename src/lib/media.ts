@@ -1,116 +1,69 @@
 import heroImg from "@/assets/images/hero-ochidoma-v.jpg";
-import heritage1 from "@/assets/images/heritage-01.jpg";
-import heritage2 from "@/assets/images/heritage-02.jpg";
-import heritage3 from "@/assets/images/heritage-03.jpg";
-import heritage4 from "@/assets/images/heritage-04.jpg";
 import type { StaticImageData } from "next/image";
-
-/**
- * Landing-page photography, resolved in one place — plus the `cdn()` normaliser
- * the rest of the site's pages use on their own inline Stitch URLs.
- *
- * Why this file exists: the prototype pointed <Image> at Stitch's CDN using the
- * bare asset URL, and that URL returns a *thumbnail* — the hero portrait was
- * arriving as a 512x286 JPEG and being stretched across a ~1920px full-bleed
- * section. That, not the markup, was the blur. Appending `=s0` asks Google's
- * image host for the unresized master (hero: 1376x768), which Next then
- * downscales into per-device AVIF/WebP.
- *
- * `npm run prepare-images` (scripts/prepare-images.mjs) pulls these masters to
- * `src/assets/images/`, upscales the hero 2x with Lanczos + unsharp so large
- * desktop viewports are downscaling rather than stretching, and writes
- * `public/og-image.jpg`. Once it has run, swap the `src` values below for the
- * static imports noted on each entry — nothing outside this file changes.
- *
- * These are design-comp images on an ephemeral CDN, not palace photography.
- * They must be replaced with verified images from the Palace Secretariat before
- * launch — same swap, same one file.
- */
-
-/**
- * Normalises a Stitch CDN URL to its unresized master.
- *
- * Every page of the prototype embedded these URLs bare, and a bare URL returns a
- * ~512px thumbnail no matter how large the frame is — that, not the markup, is
- * why the photography looked soft everywhere. `=s0` asks Google's image host for
- * the original. Covers both asset paths Stitch emits (`/aida-public/` and
- * `/aida/`); `next.config.ts` allows the hostname at `/**`, so both optimise.
- *
- * Idempotent — a URL that already carries a size parameter is returned untouched.
- */
-export const cdn = (url: string) => {
-  if (!url.startsWith("http")) return url;
-  return /=[\w-]+$/.test(url) ? url : `${url}=s0`;
-};
-
-export type LandingImage = {
-  src: string | StaticImageData;
-  /**
-   * Frame's dominant tone, painted on the container while the image loads.
-   *
-   * Remote sources carry no build-time pixel data, so `placeholder="blur"` would
-   * need a hand-supplied `blurDataURL` — and Next splices that into the `href` of
-   * a percent-encoded SVG, so only base64 rasters survive the trip. A flat tone
-   * costs nothing and reads the same behind a photo that covers the frame. Static
-   * imports generate real blur placeholders automatically; that arrives for free
-   * with the `prepare-images` swap.
-   */
-  tone: string;
-};
-
-/** Swap for: import heroImg from "@/assets/images/hero-ochidoma-v.jpg" */
-export const heroImage: LandingImage = {
-  src: heroImg,
-  tone: "#2a1d16",
-};
-
+import { archiveImage } from "@/lib/archive";
+export const cdn = (url: string) =>
+  !url.startsWith("http") || /=[\w-]+$/.test(url) ? url : `${url}=s0`;
+export type LandingImage = { src: string | StaticImageData; tone: string };
+export const heroImage: LandingImage = { src: heroImg, tone: "#2a1d16" };
 export type HeritageImage = LandingImage & {
-  /** Plate number, shown in the caption. */
   n: string;
   label: string;
   alt: string;
+  category: string;
 };
-
-/** Swap for: import … from "@/assets/images/heritage-*.jpg" */
 export const heritageImages: HeritageImage[] = [
   {
     n: "01",
-    label: "Royal Regalia",
-    alt: "A seated traditional ruler wearing a beaded crown and ceremonial regalia",
-    src: heritage1,
-    tone: "#4a371d",
+    label: "The royal biography",
+    alt: "Printed biography and portrait of Och’Idoma V in the 2024 programme",
+    src: archiveImage(1),
+    tone: "#e8dfd1",
+    category: "Royal life",
   },
   {
     n: "02",
-    label: "Palace Grounds",
-    alt: "A white palace building with landscaped grounds",
-    src: heritage2,
-    tone: "#5c1a1f",
+    label: "Culture & community",
+    alt: "A printed photographic spread showing cultural performance and community gatherings",
+    src: archiveImage(31),
+    tone: "#e8dfd1",
+    category: "Culture & ceremonies",
   },
   {
     n: "03",
-    label: "Ceremonial Gathering",
-    alt: "A traditional ruler in red and black regalia surrounded by attendees",
-    src: heritage3,
-    tone: "#3b3026",
+    label: "Palace audiences",
+    alt: "A printed collage of palace audiences and ceremonial gatherings",
+    src: archiveImage(28),
+    tone: "#e8dfd1",
+    category: "Palace gatherings",
   },
   {
     n: "04",
-    label: "Palace Address",
-    alt: "A seated traditional ruler speaking into a microphone",
-    src: heritage4,
-    tone: "#44301d",
+    label: "Royal life in the album",
+    alt: "Photographs of royal and family occasions reproduced in the programme",
+    src: archiveImage(35),
+    tone: "#e8dfd1",
+    category: "Royal life",
+  },
+  {
+    n: "05",
+    label: "Gatherings & engagements",
+    alt: "A photographic spread of palace engagements in the anniversary programme",
+    src: archiveImage(29),
+    tone: "#e8dfd1",
+    category: "Palace gatherings",
+  },
+  {
+    n: "06",
+    label: "Ceremonial occasions",
+    alt: "Printed photographs of ceremonial and worship occasions",
+    src: archiveImage(30),
+    tone: "#e8dfd1",
+    category: "Culture & ceremonies",
   },
 ];
-
-/**
- * Social preview card. `prepare-images` writes `public/og-image.jpg`; until it
- * has run, the hero master stands in so shared links are never previewless —
- * WhatsApp and X are where most of this site's statements actually get read.
- */
 export const ogImage = {
-  url: typeof heroImage.src === "string" ? heroImage.src : heroImage.src.src,
-  width: 1376,
-  height: 768,
-  alt: "His Royal Majesty Agaba'Idu Och'Idoma V in full ceremonial regalia",
+  url: archiveImage(18),
+  width: 960,
+  height: 1280,
+  alt: "Second coronation anniversary programme of Och’Idoma V, June 2024",
 };

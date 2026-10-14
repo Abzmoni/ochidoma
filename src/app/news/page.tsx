@@ -42,8 +42,9 @@ export default function News() {
       </section>
       <section className="palace-container section-space">
         <div className="editorial-note">
-          Design preview · These sample stories demonstrate the news experience
-          and await palace editorial approval.
+          From the archive · These articles summarise the June 2024 anniversary
+          programme. New palace announcements will appear separately when
+          supplied.
         </div>
         <div className="filter-bar">
           <label className="search-field">
@@ -83,7 +84,7 @@ export default function News() {
               <Link href={`/news/${item.slug}`} className="story-image">
                 <Image
                   src={item.image}
-                  alt="Illustrative sample story photograph"
+                  alt={`Programme source: ${item.title}`}
                   fill
                   sizes="(max-width: 760px) 100vw, 33vw"
                   className="object-cover"

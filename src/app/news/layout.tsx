@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Royal Gazette",
+  title: "The Palace Journal",
   description:
-    "Royal statements, appeals and endowments, traditional events and press releases issued by the Palace of the Och'Idoma, Otukpo, Benue State.",
+    "Explore source-based stories from the 2024 coronation anniversary programme, traditional leadership and palace heritage.",
   openGraph: {
-    title: "The Royal Gazette · Palace of the Och'Idoma",
+    title: "The Palace Journal · Palace of the Och'Idoma",
     description:
-      "Official dispatches of the Paramount Ruler of the Idoma Nation, published in full from the Royal Archive at Otukpo.",
+      "Historical stories, biographies and community records from the June 2024 coronation anniversary programme.",
   },
 };
 

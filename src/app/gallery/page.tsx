@@ -9,15 +9,7 @@ export default function Gallery() {
   const [filter, setFilter] = useState("All photographs");
   const [selected, setSelected] = useState(0);
   const dialog = useRef<HTMLDialogElement>(null);
-  const photos = heritageImages.map((image, i) => ({
-    ...image,
-    category: [
-      "Royal life",
-      "Palace & heritage",
-      "Royal life",
-      "Palace & heritage",
-    ][i],
-  }));
+  const photos = heritageImages;
   const visible = photos.filter(
     (photo) => filter === "All photographs" || photo.category === filter,
   );
@@ -64,27 +56,31 @@ export default function Gallery() {
           <p>Select a photograph to explore the collection.</p>
         </div>
         <div className="editorial-note">
-          Design collection · These illustrative images will be replaced with
-          approved palace photography.
+          From the 2024 programme · These are photographs of printed album
+          pages. Scenes are not individually dated or captioned; no identities
+          have been inferred.
         </div>
         <div className="filter-pills" aria-label="Filter photographs">
-          {["All photographs", "Royal life", "Palace & heritage"].map(
-            (item) => (
-              <button
-                aria-pressed={filter === item}
-                key={item}
-                onClick={() => {
-                  setFilter(item);
-                  setSelected(0);
-                }}
-              >
-                {item}
-              </button>
-            ),
-          )}
+          {[
+            "All photographs",
+            "Royal life",
+            "Palace gatherings",
+            "Culture & ceremonies",
+          ].map((item) => (
+            <button
+              aria-pressed={filter === item}
+              key={item}
+              onClick={() => {
+                setFilter(item);
+                setSelected(0);
+              }}
+            >
+              {item}
+            </button>
+          ))}
         </div>
         <p className="small-note" role="status">
-          {visible.length} photographs
+          {visible.length} album pages
         </p>
         <div className="photo-grid">
           {visible.map((photo, index) => (
@@ -97,12 +93,12 @@ export default function Gallery() {
               <div className="photo-frame">
                 <Image
                   src={photo.src}
-                  alt={`Design illustration: ${photo.alt}`}
+                  alt={`${photo.alt}`}
                   fill
                   sizes="(max-width: 760px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-contain"
                 />
-                <span className="photo-credit">Palace design collection</span>
+                <span className="photo-credit">2024 programme collection</span>
                 <span className="photo-expand" aria-hidden="true">
                   ↗
                 </span>
@@ -165,8 +161,9 @@ export default function Gallery() {
                 <span className="eyebrow">The next chapter is coming</span>
                 <h3>A home for the palace’s moving stories.</h3>
                 <p>
-                  Approved recordings will appear here. Explore the photographs
-                  while the first video collection is prepared.
+                  Ceremony films and royal addresses will appear here when
+                  recordings are supplied. For now, explore the programme’s
+                  photographic collection and historical records.
                 </p>
                 <div className="filter-pills">
                   <span>Royal addresses</span>
@@ -219,13 +216,13 @@ export default function Gallery() {
               <div className="dialog-photo">
                 <Image
                   src={active.src}
-                  alt={`Design illustration: ${active.alt}`}
+                  alt={`${active.alt}`}
                   fill
                   sizes="90vw"
                   className="object-contain"
                 />
                 <span className="photo-credit">
-                  Palace design collection · Reuse by permission
+                  2024 programme collection · Reuse by permission
                 </span>
               </div>
               <div className="dialog-caption">
@@ -239,8 +236,7 @@ export default function Gallery() {
                 <div>
                   <h2 id="photo-dialog-title">{active.label}</h2>
                   <p>
-                    {selected + 1} of {visible.length} · Illustrative
-                    photography
+                    {selected + 1} of {visible.length} · Programme photograph
                   </p>
                 </div>
                 <button

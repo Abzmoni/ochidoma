@@ -32,9 +32,10 @@ export default function CouncilPage() {
           <p>Discover each office, its communities and its story.</p>
         </div>
         <div className="editorial-note">
-          The directory structure is ready. Chief profiles marked “preview”
-          await names, titles, territories and portraits approved by the Palace
-          Secretariat.
+          Historical roster · 22 named profiles from the June 2024 anniversary
+          programme. This is not a current appointments register. Second-class
+          and community leadership rosters were not included in the supplied
+          pages.
         </div>
         <LeadershipDirectory />
       </section>
