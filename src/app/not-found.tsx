@@ -6,8 +6,8 @@ export default function NotFound() {
         <span className="eyebrow">Page not found · 404</span>
         <h1 className="editorial-title">Let’s find your way back.</h1>
         <p>
-          This story or profile is not available. Explore the journal or return
-          to the traditional council.
+          This story or profile is not available. Explore News & stories or
+          return to the traditional council.
         </p>
         <div className="button-row">
           <Link className="palace-button" href="/">
@@ -17,7 +17,7 @@ export default function NotFound() {
             Explore the council
           </Link>
           <Link className="palace-button secondary" href="/news">
-            Read the journal
+            Read News & stories
           </Link>
         </div>
       </div>

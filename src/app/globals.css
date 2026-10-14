@@ -1153,11 +1153,7 @@ html {
   color: #bba889;
   padding: 15px 0 25px;
 }
-main,
-[data-protected] {
-  -webkit-user-select: none;
-  user-select: none;
-}
+
 main input,
 main textarea,
 main [contenteditable="true"],
@@ -1344,17 +1340,6 @@ textarea {
   .story-card:hover .story-image img,
   .photo-card:hover img {
     transform: none;
-  }
-}
-@media print {
-  main {
-    display: none !important;
-  }
-  body::after {
-    content: "Palace of the Och’Idoma — Please contact the Palace Secretariat for permission to reproduce this content.";
-    display: block;
-    padding: 30px;
-    color: #211d1a;
   }
 }
 .throne-photo {
@@ -1838,5 +1823,268 @@ textarea {
   }
   .heritage-narrative .heritage-lead {
     font-size: 20px;
+  }
+}
+
+/* Compact discovery and responsive accessibility. */
+.compact-heading {
+  background: #f6f0e6;
+  border-bottom: 1px solid #ddcfb9;
+  padding-bottom: 28px;
+}
+.compact-heading h1 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1.15;
+  margin: 4px 0 12px;
+}
+.compact-heading p {
+  font-size: 17px;
+  line-height: 1.65;
+  max-width: 720px;
+  color: #65594c;
+}
+.compact-heading .text-link {
+  display: inline-block;
+  margin-top: 16px;
+}
+.compact-content {
+  padding-top: 24px;
+  padding-bottom: 64px;
+}
+.compact-content .filter-bar {
+  margin-top: 0;
+}
+.news-sections {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #d8c8b0;
+}
+.news-sections button {
+  min-height: 44px;
+  padding: 10px 4px;
+  font-size: 16px;
+  border-bottom: 3px solid transparent;
+}
+.news-sections button[aria-pressed="true"] {
+  border-color: #782030;
+  color: #782030;
+  font-weight: 600;
+}
+.news-sections a {
+  margin-left: auto;
+  font-size: 14px;
+  color: #782030;
+  padding: 10px 0;
+}
+.news-filters {
+  border: 1px solid #d6c7b0;
+  background: #fffdf8;
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+.news-filters summary,
+.directory-context summary {
+  cursor: pointer;
+  min-height: 44px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+.news-filters .filter-bar {
+  padding-top: 8px;
+}
+.directory-context {
+  margin-top: 28px;
+  padding: 0 18px 14px;
+  background: #f3ecdf;
+  border: 1px solid #ddd0ba;
+}
+.directory-context p {
+  max-width: 800px;
+  margin: 12px 0;
+  line-height: 1.75;
+}
+.content-attribution {
+  font-size: 14px;
+  color: #685c4d;
+  margin: 28px 0;
+  border-top: 1px solid #d9c9b0;
+  padding-top: 20px;
+}
+.small-note,
+.search-field,
+.filter-pills button,
+.intro-breadcrumb,
+.intro-jumps a,
+.hero-link,
+.footer-bottom,
+.archive-badge,
+.photo-credit,
+.dialog-caption p,
+.related-story > span {
+  font-size: 14px;
+}
+.filter-pills button {
+  min-height: 44px;
+}
+.story-card .eyebrow,
+.leader-card .eyebrow,
+.archive-card .eyebrow {
+  font-size: 14px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+.palace-footer nav a {
+  font-size: 15px;
+}
+@media (max-width: 760px) {
+  .palace-hero {
+    height: auto;
+    min-height: 0;
+    max-height: none;
+  }
+  .hero-content {
+    height: auto;
+    justify-content: flex-start;
+    padding-top: calc(var(--header-h) + 32px);
+    padding-bottom: 28px;
+  }
+  .hero-content h1 {
+    font-size: clamp(36px, 9.5vw, 44px);
+    margin: 14px 0 18px;
+  }
+  .hero-content > p {
+    line-height: 1.6;
+  }
+  .hero-content .button-row {
+    margin-top: 20px;
+    gap: 8px;
+  }
+  .hero-caption {
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    letter-spacing: 0.08em;
+  }
+  .hero-caption span {
+    font-size: 11px;
+  }
+  .palace-hero > img {
+    object-position: 61% center;
+  }
+  .compact-heading {
+    padding-bottom: 20px;
+  }
+  .compact-heading .intro-breadcrumb {
+    padding: 16px 0;
+  }
+  .compact-heading h1 {
+    font-size: 34px;
+    margin-top: 0;
+  }
+  .compact-heading p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .compact-content {
+    padding-top: 18px;
+    padding-bottom: 40px;
+  }
+  .news-sections {
+    gap: 6px 14px;
+    margin-bottom: 12px;
+  }
+  .news-sections a {
+    font-size: 14px;
+  }
+  .news-filters {
+    margin-bottom: 10px;
+  }
+  .compact-content > .small-note {
+    margin: 8px 0 14px;
+  }
+  .compact-content .story-image {
+    aspect-ratio: 16/9;
+  }
+}
+@media print {
+  main {
+    display: block !important;
+    padding: 0 !important;
+    color: #000;
+    background: white;
+  }
+  body::after {
+    content: none;
+  }
+  .compact-heading,
+  .media-feature,
+  .page-intro,
+  .inner-intro {
+    color: #000 !important;
+    background: white !important;
+  }
+  .inner-intro-image,
+  .intro-breadcrumb,
+  .intro-jumps,
+  .news-filters,
+  .news-sections,
+  .filter-bar,
+  .filter-pills,
+  .button-row,
+  dialog {
+    display: none !important;
+  }
+  .heritage-contents {
+    position: static;
+  }
+  .heritage-story,
+  .heritage-chapters article,
+  .profile-layout,
+  .inner-intro-grid {
+    display: block;
+  }
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+  .content-attribution {
+    display: block;
+  }
+}
+
+/* Retain the requested casual-copy and print deterrents. */
+main,
+[data-protected] {
+  -webkit-user-select: none;
+  user-select: none;
+}
+main input,
+main textarea,
+main [contenteditable="true"],
+[data-allow-copy] {
+  -webkit-user-select: text;
+  user-select: text;
+}
+@media print {
+  main {
+    display: none !important;
+  }
+  body::after {
+    content: "Palace of the Och’Idoma — Please contact the Palace Secretariat for permission to reproduce this content.";
+    display: block;
+    padding: 30px;
+    color: #211d1a;
   }
 }

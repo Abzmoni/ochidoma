@@ -7,13 +7,13 @@ const columns = [
       ["The Och’Idoma", "/the-throne"],
       ["Traditional council & chiefs", "/traditional-council"],
       ["History & culture", "/history-and-culture"],
-      ["Anniversary archive", "/archive"],
+      ["Heritage collection", "/archive"],
     ],
   },
   {
-    title: "The palace journal",
+    title: "News & stories",
     links: [
-      ["News & announcements", "/news"],
+      ["News & stories", "/news"],
       ["Photo stories", "/gallery#photographs"],
       ["Videos & addresses", "/gallery#videos"],
     ],
@@ -60,7 +60,7 @@ export default function Footer() {
             <p>Otukpo, Benue State, Nigeria.</p>
             <p>Follow palace news and share page links with your community.</p>
             <Link className="footer-contact" href="/news">
-              Visit the journal →
+              News & stories →
             </Link>
           </div>
         </div>
@@ -71,10 +71,6 @@ export default function Footer() {
           </p>
           <p>Content and media reuse by permission.</p>
         </div>
-        <p className="prototype-note">
-          Archive content follows the June 2024 programme. Current appointments
-          and new announcements await Secretariat updates.
-        </p>
       </div>
     </footer>
   );

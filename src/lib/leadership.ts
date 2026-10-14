@@ -28,7 +28,7 @@ export const leaders: Leader[] = [
     community: "Idoma nation · Otukpo",
     area: "Idoma nation",
     biography:
-      "The 2024 anniversary programme introduces the fifth Och’Idoma as chairman of the Idoma Area Traditional Council. Born on 27 March 1969 in Obagaji, Agatu, he studied accounting at Ahmadu Bello University, Zaria, graduating in 1994. His career included the Federal Inland Revenue Service, consultancy and pastoral work before his selection on 30 December 2021. The programme records the presentation of his staff of office on 30 June 2022.",
+      "The fifth Och’Idoma chairs the Idoma Area Traditional Council. Born on 27 March 1969 in Obagaji, Agatu, he graduated in accounting from Ahmadu Bello University, Zaria, in 1994. His career included taxation, consultancy and pastoral work before his selection on 30 December 2021. He received the staff of office on 30 June 2022.",
     confirmed: true,
     sourceId: "royal-biography",
     sourceImage: 1,
@@ -57,7 +57,7 @@ export const leaders: Leader[] = [
     sourceId: "first-class-chiefs",
     sourceImage: 7,
     biography:
-      "The second coronation anniversary programme of June 2024 lists HRH Engr. George Edeh as Och’Enone among the first class chiefs of the Idoma traditional institution.",
+      "HRH Engr. George Edeh is recorded as Och’Enone, among the first-class chiefs of the Idoma traditional institution.",
   },
   {
     slug: "ogah-ero",
@@ -70,7 +70,7 @@ export const leaders: Leader[] = [
     sourceId: "first-class-chiefs",
     sourceImage: 7,
     biography:
-      "The second coronation anniversary programme of June 2024 lists HRH Ogah Ero, CP (Rtd) as Adirahu Ny’Igede among the first class chiefs of the Idoma traditional institution.",
+      "HRH Ogah Ero, CP (Rtd) is recorded as Adirahu Ny’Igede, among the first-class chiefs of the Idoma traditional institution.",
   },
   {
     slug: "agangwu-baba-odangala",
@@ -83,7 +83,7 @@ export const leaders: Leader[] = [
     sourceId: "first-class-chiefs",
     sourceImage: 7,
     biography:
-      "The second coronation anniversary programme of June 2024 lists HRH Agangwu Baba Odangala as Och’Apa/Agatu among the first class chiefs of the Idoma traditional institution.",
+      "HRH Agangwu Baba Odangala is recorded as Och’Apa/Agatu, among the first-class chiefs of the Idoma traditional institution.",
   },
   {
     slug: "emmanuel-okochi",
@@ -96,7 +96,7 @@ export const leaders: Leader[] = [
     sourceId: "first-class-chiefs",
     sourceImage: 7,
     biography:
-      "The second coronation anniversary programme of June 2024 lists HRH Emmanuel Okochi as Ejelote 1, Och’Otukpo/Ohimini among the first class chiefs of the Idoma traditional institution. The programme also identifies him as chairman of the anniversary’s Central Planning Committee.",
+      "HRH Emmanuel Okochi is recorded as Ejelote 1, Och’Otukpo/Ohimini, among the first-class chiefs of the Idoma traditional institution.",
   },
   {
     slug: "godwin-idu",
@@ -109,7 +109,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Godwin Idu under Apa, with Zone A as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Godwin Idu is recorded as a third-class chief for Zone A in Apa.",
   },
   {
     slug: "peter-eyikwodani",
@@ -122,7 +122,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Peter Eyikwodani under Apa, with Zone B as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Peter Eyikwodani is recorded as a third-class chief for Zone B in Apa.",
   },
   {
     slug: "john-agidani",
@@ -135,7 +135,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief John Agidani under Agatu, with Zone A as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief John Agidani is recorded as a third-class chief for Zone A in Agatu.",
   },
   {
     slug: "jerry-ochola",
@@ -148,7 +148,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Jerry Ochola under Agatu, with Zone B as the area represented. His entry is explicitly marked “Acting” in that publication. The supplied roster does not include a separate biography or portrait.",
+      "Chief Jerry Ochola is recorded as a third-class chief for Zone B in Agatu. The historical entry identifies an acting appointment.",
   },
   {
     slug: "okopi-simon",
@@ -161,7 +161,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Okopi Simon under Ohimini, with Oglewu / Ochobo / Okpiko as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Okopi Simon is recorded as a third-class chief for Oglewu / Ochobo / Okpiko in Ohimini.",
   },
   {
     slug: "zakari-shaibu",
@@ -174,7 +174,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Zakari Shaibu under Ohimini, with Agadagba / Awume / Onyagede as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Zakari Shaibu is recorded as a third-class chief for Agadagba / Awume / Onyagede in Ohimini.",
   },
   {
     slug: "joseph-echobu",
@@ -187,7 +187,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Joseph Echobu under Okpokwu, with Okpoga / Ichama as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Joseph Echobu is recorded as a third-class chief for Okpoga / Ichama in Okpokwu.",
   },
   {
     slug: "ojoh-ochechema",
@@ -200,7 +200,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Ojoh Ochechema under Okpokwu, with Edumoga as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Ojoh Ochechema is recorded as a third-class chief for Edumoga in Okpokwu.",
   },
   {
     slug: "sunday-ekele",
@@ -213,7 +213,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Sunday Ekele under Ogbadibo, with Otukpa as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Sunday Ekele is recorded as a third-class chief for Otukpa in Ogbadibo.",
   },
   {
     slug: "pius-abah",
@@ -226,7 +226,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Pius Abah under Ogbadibo, with Owukpa / Orokam as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Pius Abah is recorded as a third-class chief for Owukpa / Orokam in Ogbadibo.",
   },
   {
     slug: "julius-iguve-ade",
@@ -239,7 +239,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Julius Iguve Ade under Ado, with Utonkon / Igumale as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Julius Iguve Ade is recorded as a third-class chief for Utonkon / Igumale in Ado.",
   },
   {
     slug: "ogenyi-ocheme",
@@ -252,7 +252,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Ogenyi Ocheme under Ado, with Agila / Ulayi / Ijigba / Ekile as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Ogenyi Ocheme is recorded as a third-class chief for Agila / Ulayi / Ijigba / Ekile in Ado.",
   },
   {
     slug: "emmanuel-obagi",
@@ -265,7 +265,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Emmanuel Obagi under Obi, with Eke as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Emmanuel Obagi is recorded as a third-class chief for Eke in Obi.",
   },
   {
     slug: "arubi-inmo-felix",
@@ -278,7 +278,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Arubi Inmo Felix under Obi, with Edumoga as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Arubi Inmo Felix is recorded as a third-class chief for Edumoga in Obi.",
   },
   {
     slug: "ogah-john-okponya",
@@ -291,7 +291,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Ogah John Okponya under Oju, with Uwokwu as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Ogah John Okponya is recorded as a third-class chief for Uwokwu in Oju.",
   },
   {
     slug: "adoga-j-o",
@@ -304,7 +304,7 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Adoga J O under Oju, with Igede Ariri / Adinu as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Adoga J O is recorded as a third-class chief for Igede Ariri / Adinu in Oju.",
   },
   {
     slug: "sunday-assam-rogers",
@@ -317,6 +317,6 @@ export const leaders: Leader[] = [
     sourceId: "third-class-chiefs",
     sourceImage: 9,
     biography:
-      "The June 2024 programme lists Chief Sunday Assam Rogers under Otukpo, with Otukpo / Akpa as the area represented. The supplied roster does not include a separate biography or portrait.",
+      "Chief Sunday Assam Rogers is recorded as a third-class chief for Otukpo / Akpa in Otukpo.",
   },
 ];

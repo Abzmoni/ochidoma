@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import ContentProtection from "@/components/ContentProtection";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import ContentProtection from "@/components/ContentProtection";
 import { ogImage } from "@/lib/media";
 
 const playfairDisplay = Playfair_Display({
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     "IATC",
     "Agaba'Idu",
     "Idoma culture",
-    "Coronation anniversary archive",
+    "Idoma heritage collection",
   ],
   // Statements from this site are routinely re-shared on WhatsApp and X, where the
   // link preview is often all a reader sees. Worth getting right.

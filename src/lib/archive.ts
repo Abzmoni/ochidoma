@@ -9,10 +9,10 @@ export const archiveEntries: ArchiveEntry[] = [
   {
     slug: "anniversary-programme",
     title: "The second coronation anniversary",
-    category: "Programme",
+    category: "Past occasions",
     images: [18, 17, 6],
     summary:
-      "The programme announces the second coronation anniversary for 29 June 2024 at 10:00 am at the Och’Idoma Palace, Otukpo. Its order of proceedings includes welcome remarks, cultural performances, the royal address, chieftaincy conferments, goodwill messages and closing prayers.",
+      "The second coronation anniversary of Och’Idoma V was scheduled for 29 June 2024 at the palace in Otukpo. The celebration brought together plans for cultural performances, royal addresses, chieftaincy recognition and goodwill messages.",
   },
   {
     slug: "royal-biography",
@@ -20,7 +20,7 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "The institution",
     images: [1, 4],
     summary:
-      "Born in Obagaji, Agatu, in 1969, Elaigwu Odogbo Obagaji John pursued accounting and finance, worked in taxation and consultancy, and served as a pastor before his selection in December 2021. These pages record his education, career and family life as presented in 2024.",
+      "Born in Obagaji, Agatu, in 1969, Elaigwu Odogbo Obagaji John studied accounting and finance, worked in taxation and consultancy, and served as a pastor before his selection in December 2021.",
   },
   {
     slug: "history-of-the-stool",
@@ -28,7 +28,7 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "The institution",
     images: [5, 2],
     summary:
-      "The programme traces the institution through district administration, the establishment of the central stool in 1947 and five successive Och’Idoma reigns. Its account places the paramount ruler within an institution of first, second and third class chiefs and district heads.",
+      "The central Och’Idoma stool was established in 1947. Its history spans five successive rulers and a wider institution of first-, second- and third-class chiefs and district heads.",
   },
   {
     slug: "first-class-chiefs",
@@ -36,7 +36,7 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "The institution",
     images: [7],
     summary:
-      "Four named chiefs and their printed portraits: George Edeh, Ogah Ero, Agangwu Baba Odangala and Emmanuel Okochi. The directory uses the names and titles printed on this page.",
+      "The first-class leadership records include George Edeh, Och’Enone; Ogah Ero, Adirahu Ny’Igede; Agangwu Baba Odangala, Och’Apa/Agatu; and Emmanuel Okochi, Ejelote 1, Och’Otukpo/Ohimini.",
   },
   {
     slug: "third-class-chiefs",
@@ -44,7 +44,7 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "The institution",
     images: [9],
     summary:
-      "Seventeen names are listed across Apa, Agatu, Ohimini, Okpokwu, Ogbadibo, Ado, Obi, Oju and Otukpo. Jerry Ochola’s entry is marked Acting. This is the programme’s 2024 record, not a confirmation of present appointments.",
+      "The third-class leadership records cover seventeen chiefs across Apa, Agatu, Ohimini, Okpokwu, Ogbadibo, Ado, Obi, Oju and Otukpo. Jerry Ochola is recorded in an acting capacity.",
   },
   {
     slug: "royal-household",
@@ -52,162 +52,158 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "The institution",
     images: [10],
     summary:
-      "A printed portrait caption identifies Her Royal Majesty Agaba’anya Mrs. Omabo Elaigwu as wife of the Och’Idoma.",
+      "Her Royal Majesty Agaba’anya Mrs. Omabo Elaigwu is the wife of the Och’Idoma and a member of the royal household.",
   },
   {
     slug: "planning-committee",
     title: "The people behind the anniversary",
-    category: "Programme",
+    category: "Past occasions",
     images: [24, 21],
     summary:
-      "The Central Planning Committee is chaired by HRH Emmanuel Okochi. The programme lists 21 committee members, with Pst. Adole Ejah, PhD, as planning-committee secretary, and includes the committee’s message of appreciation. Council Secretary Dr. Adegbe Uloko also appears in the programme’s committee list. The planning-committee role and Council Secretary are separate offices.",
+      "The anniversary’s Central Planning Committee was chaired by HRH Emmanuel Okochi, with Pst. Adole Ejah, PhD, serving as committee secretary. Council Secretary Dr. Adegbe Uloko was also a committee member. These are distinct secretarial offices.",
   },
   {
     slug: "palace-in-pictures",
     title: "Palace life in pictures",
-    category: "Photographs",
+    category: "Palace life",
     images: [28, 29, 30, 31, 35],
     summary:
-      "Five photographic spreads record ceremonial gatherings, palace audiences, cultural performances and royal life. Individual scenes are undated and most people are not captioned, so they are presented as booklet photographs without inferred identities.",
+      "Palace audiences, ceremonial gatherings, cultural performances and royal occasions form part of the institution’s visual history. The image collection offers a window into that shared life.",
   },
   {
     slug: "silas-ochejele",
     title: "Professor Silas Ochejele",
-    category: "Citations",
+    category: "People & contributions",
     images: [37, 36],
     summary:
-      "An obstetrician and gynaecologist from Agatu, Ochejele is recognised in the programme for medical service, maternal-health outreach and community development. The citation records his appointment as pioneer acting Chief Medical Director of the Federal University of Health Sciences Teaching Hospital, Otukpo, in April 2023.",
+      "An obstetrician and gynaecologist from Agatu, Ochejele has contributed to medical service, maternal-health outreach and community development. His career includes an April 2023 appointment as pioneer acting Chief Medical Director of the Federal University of Health Sciences Teaching Hospital, Otukpo.",
   },
   {
     slug: "aminu-suleiman",
     title: "Aminu Suleiman",
-    category: "Citations",
+    category: "People & contributions",
     images: [38, 41],
     summary:
-      "The programme describes Suleiman’s education in quantity surveying, business work in petroleum and investment, and public service. This citation is preserved as a 2024 biographical account.",
+      "Suleiman’s background includes education in quantity surveying, business work in petroleum and investment, and public service.",
   },
   {
     slug: "michael-oglegba",
     title: "Hon. Michael Oglegba",
-    category: "Citations",
+    category: "People & contributions",
     images: [39],
     summary:
-      "The citation describes a career in finance, technology and agriculture, together with education, scholarship and ICT initiatives. It identifies Oglegba with Adim Akpa, Otukpo, and records his finance and economic planning portfolio at the time of publication.",
+      "Oglegba’s career spans finance, technology and agriculture, with community contributions in education, scholarships and ICT. He is associated with Adim Akpa, Otukpo.",
   },
   {
     slug: "patrick-olonta",
     title: "Captain Patrick Agwo Olonta",
-    category: "Citations",
+    category: "People & contributions",
     images: [42, 40],
     summary:
-      "The programme follows Olonta’s aviation training and career through Sky Power, Dornier, Bristow and Air Peace. It also describes contributions to education, water and electricity in Ochaigede, Agadagba, Ohimini.",
+      "Olonta’s aviation career included Sky Power, Dornier, Bristow and Air Peace. His community contributions include support for education, water and electricity in Ochaigede, Agadagba, Ohimini.",
   },
   {
     slug: "paul-edeh",
     title: "Paul Samuel Edeh",
-    category: "Citations",
+    category: "People & contributions",
     images: [48, 43],
     summary:
-      "A lawyer and sports administrator from Orokam, Ogbadibo, Edeh is profiled for football development, including women’s football, and for education and community support. The programme describes Naija Ratels, Honey Badgers and his contributions to legal education.",
+      "A lawyer and sports administrator from Orokam, Ogbadibo, Edeh is associated with football development, including Naija Ratels and Honey Badgers, and support for legal education and community projects.",
   },
   {
     slug: "agada-apochi",
     title: "Dr. Agada Boniface Apochi",
-    category: "Citations",
+    category: "People & contributions",
     images: [46, 45],
     summary:
-      "Apochi’s citation describes his legal and financial technology career and community initiatives in Owukpa, Ogbadibo. It records healthcare, classroom, water, road and scholarship support, including the Apochi Memorial Hospital.",
+      "Apochi’s work spans law, financial technology and community development in Owukpa, Ogbadibo. His contributions include healthcare, classrooms, water, roads and scholarships, including the Apochi Memorial Hospital.",
   },
   {
     slug: "innocent-ujah",
     title: "Professor Innocent Achanya Otobo Ujah",
-    category: "Citations",
+    category: "People & contributions",
     images: [47],
     summary:
-      "The programme profiles Ujah’s career in obstetrics, maternal health, research and university leadership. It records his service at the Nigerian Institute of Medical Research and as pioneer vice-chancellor of the Federal University of Health Sciences, Otukpo.",
+      "Ujah’s career spans obstetrics, maternal health, research and university leadership. His service includes the Nigerian Institute of Medical Research and the role of pioneer vice-chancellor of the Federal University of Health Sciences, Otukpo.",
   },
   {
     slug: "ameh-idoko",
     title: "Dr. Ameh Idoko",
-    category: "Citations",
+    category: "People & contributions",
     images: [49],
     summary:
-      "Idoko’s citation traces a medical career beginning with an Ibadan medical degree in 1967, followed by paediatric care and the development of Madonna Clinic and Hospital. It also records teaching and clinical contributions in Benue.",
+      "Idoko’s medical career began with an Ibadan medical degree in 1967. He worked in paediatrics, developed Madonna Clinic and Hospital, and contributed to clinical practice and medical teaching in Benue.",
   },
   {
     slug: "bright-ogaji",
     title: "Chief Bright Igodo Ogaji",
-    category: "Citations",
+    category: "People & contributions",
     images: [51, 50],
     summary:
-      "The programme describes Ogaji’s business and community development work, including education, infrastructure and enterprise in Ibilla and Oju. The printed citation uses the title Obe’Oba 1 of Igede.",
+      "Ogaji’s business and community development work includes education, infrastructure and enterprise in Ibilla and Oju. His traditional title is recorded as Obe’Oba 1 of Igede.",
   },
   {
     slug: "ojotu-ojema",
     title: "Hon. Pst. Ojotu Ojema",
-    category: "Citations",
+    category: "People & contributions",
     images: [52],
     summary:
-      "The citation records Ojema’s origins in Obagaji, Agatu, studies at Benue State University, civil service and union work, and later public service. It describes his election to represent Apa/Agatu in 2023.",
+      "Ojema’s background includes Obagaji, Agatu, studies at Benue State University, civil service and union work. His public-service record includes election to represent Apa/Agatu in 2023.",
   },
   {
     slug: "francis-ikpobu",
     title: "Chief Francis Alochu Ikpobu",
-    category: "Citations",
+    category: "People & contributions",
     images: [53],
     summary:
-      "The programme describes business and philanthropic work through the Alochu Foundation, including scholarships, water, electricity, a town hall and a football academy. The heading uses Francis, while the body also uses Frank.",
+      "Ikpobu’s business and philanthropic work includes the Alochu Foundation, with contributions to scholarships, water, electricity, a town hall and a football academy. He is also known as Frank Alochu Ikpobu.",
   },
   {
     slug: "godwin-obla",
     title: "Barr. Godwin Odumu Obla, SAN",
-    category: "Citations",
+    category: "People & contributions",
     images: [55, 54],
     summary:
-      "The citation describes Obla’s legal practice, arbitration and public service. It also records the Godwin Obla Foundation’s work in education, health, water and community infrastructure.",
+      "Obla’s career includes legal practice, arbitration and public service. The Godwin Obla Foundation has contributed to education, health, water and community infrastructure.",
   },
   {
     slug: "abba-adaudu",
     title: "Abba Adaudu",
-    category: "Citations",
+    category: "People & contributions",
     images: [56],
     summary:
-      "The programme profiles Adaudu’s accounting, taxation and consulting work, education at Benue institutions and professional fellowships. It also describes community scholarships and school governance work.",
+      "Adaudu’s professional work covers accounting, taxation and consulting. His community contributions include scholarships and school governance, alongside professional fellowships and education at Benue institutions.",
   },
   {
     slug: "lami-ogenyi",
     title: "Chief Hon. Mrs. Lami Danladi Ogenyi",
-    category: "Citations",
+    category: "People & contributions",
     images: [62, 58, 57],
     summary:
-      "The citation records Ogenyi’s education, public service and community support in Ado. It describes scholarships, water projects, support for displaced people and her role as deputy speaker at the time of the 2024 publication.",
+      "Ogenyi’s public service and community support in Ado include education, scholarships, water projects and assistance for displaced people. Her historical career record includes service as deputy speaker.",
   },
   {
     slug: "nick-eworo",
     title: "Rt. Hon. Chief Nick Eworo",
-    category: "Citations",
+    category: "People & contributions",
     images: [59],
     summary:
-      "The programme describes Eworo’s business, logistics and public service career. It records his earlier service in the Benue State House of Assembly and science, technology and innovation portfolio in 2024.",
+      "Eworo’s background includes business, logistics and public service. His career record includes service in the Benue State House of Assembly and a science, technology and innovation portfolio.",
   },
   {
     slug: "sam-ode",
     title: "Barr. Dr. Sam Ode, mni",
-    category: "Citations",
+    category: "People & contributions",
     images: [66, 61, 60],
     summary:
-      "The programme traces Ode’s education, legal training and public administration career. It also describes community infrastructure, educational support and youth development. The deputy governor designation belongs to this 2024 record.",
+      "Ode’s education and career span legal training and public administration. His community work includes infrastructure, educational support and youth development.",
   },
   {
     slug: "hyacinth-alia",
     title: "Rev. Fr. Dr. Hyacinth Iormem Alia",
-    category: "Citations",
+    category: "People & contributions",
     images: [15, 64, 63],
     summary:
-      "The supplied pages describe Alia’s pastoral work and public service and explain the programme’s recognition of him. The governor designation and policy claims are part of the 2024 publication; they are not presented here as current news.",
+      "Alia’s background combines pastoral work and public service. His career includes service in Catholic parishes and healthcare chaplaincy before his election as governor of Benue State in 2023.",
   },
 ];
-export const archiveImage = (id: number) =>
-  `/archive/coronation-2024/source-${String(id).padStart(2, "0")}.jpg`;
-export const archiveSource =
-  "Second Coronation Anniversary Programme · 29 June 2024";

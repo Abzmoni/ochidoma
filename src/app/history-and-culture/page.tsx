@@ -4,38 +4,38 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "History & Culture · The Story of the Stool",
   description:
-    "Explore the historical account and succession record preserved in the 2024 coronation anniversary programme.",
+    "Explore Idoma traditions of origin, local leadership and the history of the paramount stool.",
 };
 const reigns = [
   [
     "1947–1960",
     "Ogiri Oko",
     "Och’Idoma I",
-    "The programme records his election on 15 August 1947 after service as district head of Adoka.",
+    "Elected on 15 August 1947 after service as district head of Adoka.",
   ],
   [
     "1960–1995",
     "Abraham Ajene Ukpabi",
     "Och’Idoma II",
-    "The succession account describes his accession in March 1960 and his earlier work in district leadership and public service.",
+    "He acceded in March 1960 after earlier work in district leadership and public service.",
   ],
   [
     "1995–1996",
     "Edwin Ogbu",
     "Och’Idoma III",
-    "The programme records his election on 8 January 1995 following a career in administration and international diplomacy.",
+    "Elected on 8 January 1995 following a career in administration and international diplomacy.",
   ],
   [
     "1996–2021",
     "Elias Ikoyi Obekpa",
     "Och’Idoma IV",
-    "The account records his accession on 1 December 1996, following studies in business administration and a career in taxation.",
+    "He acceded on 1 December 1996, following studies in business administration and a career in taxation.",
   ],
   [
     "Selected 2021 · Staff of office 2022",
     "Elaigwu Odogbo Obagaji John",
     "Och’Idoma V",
-    "Selected on 30 December 2021 and presented with the staff of office on 30 June 2022, according to the anniversary programme.",
+    "Selected on 30 December 2021 and presented with the staff of office on 30 June 2022.",
   ],
 ];
 export default function History() {
@@ -63,7 +63,7 @@ export default function History() {
           <a href="#succession">03 · The paramount rulers</a>
           <a href="#living-heritage">04 · A living heritage</a>
           <Link href="/archive/history-of-the-stool" className="text-link">
-            Historical sources ↗
+            Heritage collection ↗
           </Link>
         </aside>
         <article className="heritage-narrative">
@@ -79,28 +79,26 @@ export default function History() {
             institutions from which the modern paramount stool emerged.
           </p>
           <p>
-            The historical account in the 2024 anniversary programme connects
-            Idoma origins to Kwararafa. This is presented here as a tradition of
-            origin: an account of belonging and ancestry, rather than a precise,
-            independently established migration chronology.
+            Idoma traditions of origin connect the people to Kwararafa. These
+            accounts preserve a sense of belonging and ancestry, while the
+            details of migration and early settlement remain part of a wider
+            historical inquiry.
           </p>
           <p>
             Before a central Och’Idoma stool was established, leadership was
-            rooted in local communities. The programme describes a later
-            administrative structure of districts and zones. Understanding these
-            local foundations helps explain why the traditional institution
-            today includes many chiefs and community leaders alongside the
-            paramount ruler.
+            rooted in local communities. A later administrative structure
+            organised districts and zones. Understanding these local foundations
+            helps explain why the traditional institution today includes many
+            chiefs and community leaders alongside the paramount ruler.
           </p>
           <div className="heritage-pullquote">
             The palace is one chapter in the history of a people; the
             communities are where the story begins.
           </div>
           <p>
-            Different communities carry their own histories. This account
-            follows the material supplied for the palace archive; it is a
-            starting point for a fuller record of community traditions, oral
-            histories and cultural practice.
+            Different communities carry their own histories. Community
+            traditions, oral accounts and cultural practices all contribute to
+            the wider story of the Idoma people.
           </p>
         </article>
       </section>
@@ -116,8 +114,8 @@ export default function History() {
               </h2>
             </div>
             <p>
-              The programme traces a progression from district administration to
-              the central stool established in 1947.
+              The institution developed through district administration and the
+              establishment of the central stool in 1947.
             </p>
           </div>
           <div className="heritage-chapters">
@@ -126,10 +124,10 @@ export default function History() {
               <div>
                 <h3>The district structure</h3>
                 <p>
-                  The programme records the grouping of 22 districts into a
-                  shared administrative structure in 1928. District heads
-                  remained important figures in the relationship between local
-                  communities and wider administration.
+                  In 1928, 22 districts were grouped into a shared
+                  administrative structure. District heads remained important
+                  figures in the relationship between local communities and
+                  wider administration.
                 </p>
                 <p>
                   This history helps place community leadership at the centre of
@@ -143,10 +141,10 @@ export default function History() {
               <div>
                 <h3>Connecting the communities</h3>
                 <p>
-                  The historical account identifies four zonal headquarters: Ito
-                  in the east, Iga-Okpaya in the north, Utonkon in the south and
-                  Ugbokolo in the west. These appear in the programme as
-                  intermediate centres in the organisation of the districts.
+                  Four zonal headquarters connected the districts: Ito in the
+                  east, Iga-Okpaya in the north, Utonkon in the south and
+                  Ugbokolo in the west. These served as intermediate centres in
+                  the organisation of the districts.
                 </p>
                 <p>
                   Their inclusion shows how the story of the institution extends
@@ -160,16 +158,15 @@ export default function History() {
               <div>
                 <h3>The establishment of the central stool</h3>
                 <p>
-                  The central Och’Idoma stool was established in 1947, according
-                  to the programme. Ogiri Oko, previously district head of
-                  Adoka, was elected on 15 August that year as the first
-                  Och’Idoma.
+                  The central Och’Idoma stool was established in 1947. Ogiri
+                  Oko, previously district head of Adoka, was elected on 15
+                  August that year as the first Och’Idoma.
                 </p>
                 <p>
-                  The programme describes the paramount ruler as supported by
-                  first-, second- and third-class chiefs and district heads. The
-                  council directory reflects that wider institution, with the
-                  Council Secretary also represented.
+                  The paramount ruler is supported by first-, second- and
+                  third-class chiefs and district heads. The council directory
+                  reflects that wider institution, with the Council Secretary
+                  also represented.
                 </p>
                 <Link href="/traditional-council" className="text-link">
                   Meet the council and its chiefs ↗
@@ -177,13 +174,6 @@ export default function History() {
               </div>
             </article>
           </div>
-          <p className="small-note">
-            Source: the historical-background pages of the Second Coronation
-            Anniversary Programme, June 2024.{" "}
-            <Link href="/archive/history-of-the-stool">
-              Read the historical record →
-            </Link>
-          </p>
         </div>
       </section>
       <section id="succession" className="media-feature">
@@ -194,7 +184,7 @@ export default function History() {
               <h2>Five chapters of leadership.</h2>
             </div>
             <Link href="/archive/history-of-the-stool" className="text-link">
-              Read the source pages ↗
+              Explore related history ↗
             </Link>
           </div>
           <div className="history-timeline">
@@ -209,11 +199,6 @@ export default function History() {
               </article>
             ))}
           </div>
-          <p className="small-note">
-            Dates and summaries follow the 2024 programme. Its first reign dates
-            and stated duration do not agree; the timeline preserves the printed
-            dates without repeating the conflicting duration.
-          </p>
         </div>
       </section>
       <section id="living-heritage" className="palace-container section-space">
@@ -223,9 +208,8 @@ export default function History() {
             <h2>History carried into the present.</h2>
           </div>
           <p>
-            The anniversary programme records more than officeholders. It brings
-            together ceremony, community recognition and the people who
-            participate in palace life.
+            Palace life brings together ceremony, community recognition and the
+            people who keep traditions alive.
           </p>
         </div>
         <div className="gateway-grid">
@@ -246,7 +230,7 @@ export default function History() {
             <span className="eyebrow">Service & remembrance</span>
             <h3>People who contribute</h3>
             <p>
-              The programme’s citations recognise work in medicine, education,
+              Community recognition celebrates work in medicine, education,
               sport, enterprise and community development. These personal
               stories connect the ceremonial occasion to the everyday lives of
               communities.

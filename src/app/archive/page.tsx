@@ -1,86 +1,33 @@
-import PageIntro from "@/components/PageIntro";
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import ArchiveLibrary from "@/components/ArchiveLibrary";
-import { heritageImages } from "@/lib/media";
 export const metadata: Metadata = {
-  title: "Palace Archive · Coronation Anniversary 2024",
+  title: "Heritage Collection",
   description:
-    "Explore the 2024 anniversary programme, traditional leadership, historical records, citations and photographs.",
+    "Historical biographies, the traditional institution and community contributions.",
 };
 export default function Archive() {
   return (
     <>
-      <PageIntro
-        eyebrow="The palace archive"
-        title="Our memory, preserved."
-        description="Explore the biographies, names and historical records collected in the 2024 coronation anniversary programme."
-        variant="journal"
-        links={[
-          { label: "Search the collection", href: "#collection" },
-          { label: "Read our history", href: "/history-and-culture" },
-        ]}
-      />
-      <section className="palace-container section-space">
-        <div className="archive-feature">
-          <div className="archive-cover">
-            <Image
-              src={heritageImages[0].src}
-              alt={heritageImages[0].alt}
-              width={960}
-              height={1280}
-              priority
-            />
-          </div>
-          <div>
-            <span className="eyebrow">29 June 2024 · Otukpo</span>
-            <h2 className="editorial-title">
-              Two years.
-              <br />
-              One shared celebration.
-            </h2>
-            <p className="intro-copy">
-              The anniversary of His Royal Majesty Agaba-Idu Dr. Elaigwu Odogbo
-              Obagaji John, CON, Och’Idoma V.
-            </p>
-            <p>
-              The programme brings together the traditional institution, royal
-              history, community service and the people recognised on this
-              occasion.
-            </p>
-            <div className="button-row">
-              <Link
-                href="/archive/anniversary-programme"
-                className="palace-button"
-              >
-                Explore the programme →
-              </Link>
-              <a href="#collection" className="text-link">
-                Browse all records ↓
-              </a>
-            </div>
-            <p className="small-note">
-              Historical collection · Names, offices and achievements reflect
-              the 2024 publication. Photographs of printed pages may contain
-              glare or incomplete text.
-            </p>
-          </div>
+      <header className="compact-heading">
+        <div className="palace-container">
+          <nav className="intro-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span>/</span>
+            <span>Heritage collection</span>
+          </nav>
+          <h1>Heritage collection</h1>
+          <p>
+            Historical profiles, milestones and the people who have shaped our
+            communities.
+          </p>
+          <Link className="text-link" href="/news">
+            For current announcements, visit News & stories →
+          </Link>
         </div>
-      </section>
-      <section id="collection" className="media-feature">
-        <div className="palace-container section-space">
-          <div className="section-heading">
-            <div>
-              <span className="eyebrow">Read · Discover · Remember</span>
-              <h2>Inside the collection.</h2>
-            </div>
-            <Link href="/traditional-council" className="text-link">
-              Explore the chiefs directory ↗
-            </Link>
-          </div>
-          <ArchiveLibrary />
-        </div>
+      </header>
+      <section id="collection" className="palace-container compact-content">
+        <ArchiveLibrary />
       </section>
     </>
   );

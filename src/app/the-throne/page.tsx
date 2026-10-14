@@ -129,7 +129,7 @@ export default function TheThrone() {
             <h2>Education, service and community.</h2>
           </div>
           <p>
-            The 2024 biography describes accounting studies at Ahmadu Bello
+            His education includes accounting studies at Ahmadu Bello
             University, postgraduate study, a career at the Federal Inland
             Revenue Service, consultancy and pastoral work before his selection.
           </p>
@@ -138,27 +138,19 @@ export default function TheThrone() {
           <Link className="gateway" href="/archive/royal-biography">
             <span className="eyebrow">The royal biography</span>
             <h3>A life of service</h3>
-            <p>
-              Read the biographical account and its original programme pages.
-            </p>
+            <p>Explore his education, career and life before the throne.</p>
             <span className="text-link">Explore the biography ↗</span>
           </Link>
           <Link className="gateway" href="/archive/royal-household">
             <span className="eyebrow">The royal household</span>
             <h3>Her Royal Majesty</h3>
-            <p>
-              The programme introduces Agaba’anya Mrs. Omabo Elaigwu, wife of
-              the Och’Idoma.
-            </p>
+            <p>Agaba’anya Mrs. Omabo Elaigwu is the wife of the Och’Idoma.</p>
             <span className="text-link">View the household record ↗</span>
           </Link>
           <Link className="gateway" href="/archive/anniversary-programme">
             <span className="eyebrow">29 June 2024</span>
             <h3>The second anniversary</h3>
-            <p>
-              Discover the programme, the traditional institution and the
-              occasion’s citations.
-            </p>
+            <p>Explore the occasion and the people it recognised.</p>
             <span className="text-link">Explore the celebration ↗</span>
           </Link>
         </div>
@@ -168,8 +160,7 @@ export default function TheThrone() {
             <h2>The story of the stool.</h2>
             <p>
               Follow five chapters of leadership, from the establishment of the
-              central stool in 1947 to the record preserved in the 2024
-              programme.
+              central stool in 1947 to the present chapter of the institution.
             </p>
           </div>
           <Link className="palace-button" href="/history-and-culture">

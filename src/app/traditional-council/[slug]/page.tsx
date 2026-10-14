@@ -41,7 +41,7 @@ export default async function LeaderPage({
           <span className="archive-badge">
             {l.rank === "Council Secretary"
               ? "Council Secretariat"
-              : "Recorded June 2024"}
+              : "Historical profile"}
           </span>
         </aside>
         <article>
@@ -51,10 +51,10 @@ export default async function LeaderPage({
           <div className="editorial-note">
             {l.rank === "Council Secretary"
               ? "Council Secretariat · Full biography and official portrait to follow."
-              : "From the 2024 coronation anniversary programme. This entry records the published roster; current officeholder updates await the Palace Secretariat."}
+              : "Historical officeholder record. Contact the Palace Secretariat for current appointment information."}
           </div>
           <h2 className="subheading">
-            {l.confirmed ? "About this record" : "About the office"}
+            {l.confirmed ? "About" : "About the office"}
           </h2>
           <p>{l.biography}</p>
           <div className="profile-facts">
@@ -74,7 +74,7 @@ export default async function LeaderPage({
           <div className="button-row">
             {l.sourceId && (
               <Link className="palace-button" href={`/archive/${l.sourceId}`}>
-                View the source record ↗
+                Explore related history ↗
               </Link>
             )}
             <ShareLink title={l.name} />

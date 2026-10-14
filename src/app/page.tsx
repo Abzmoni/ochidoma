@@ -34,7 +34,7 @@ export default function Home() {
               Explore our leadership ↗
             </Link>
             <Link href="/news" className="hero-link">
-              Explore the palace journal →
+              News & stories →
             </Link>
           </div>
           <div className="hero-caption">
@@ -45,9 +45,9 @@ export default function Home() {
       </section>
       <div className="news-ribbon">
         <div className="palace-container">
-          <span className="eyebrow">From the archive</span>
+          <span className="eyebrow">Featured story</span>
           <Link href={`/news/${notices[0].slug}`}>{notices[0].title} ↗</Link>
-          <span className="ribbon-label">2024 archive</span>
+          <span className="ribbon-label">Past occasion</span>
         </div>
       </div>
       <section className="palace-container section-space">
@@ -79,8 +79,8 @@ export default function Home() {
             },
             {
               n: "03",
-              title: "The palace archive",
-              text: "Read the anniversary programme, biographies, historical records and the stories behind our institution.",
+              title: "Heritage collection",
+              text: "Discover biographies, historical records and the stories behind our institution.",
               href: "/archive",
             },
           ].map((item) => (
@@ -140,11 +140,11 @@ export default function Home() {
       <section className="palace-container section-space">
         <div className="section-heading">
           <div>
-            <span className="eyebrow">The palace journal</span>
-            <h2>Stories from our archive.</h2>
+            <span className="eyebrow">News & stories</span>
+            <h2>Stories of our people.</h2>
           </div>
           <Link className="text-link" href="/news">
-            All news & announcements ↗
+            News & stories ↗
           </Link>
         </div>
         <div className="news-grid">
@@ -158,7 +158,7 @@ export default function Home() {
                   sizes="(max-width: 760px) 100vw, 33vw"
                   className="object-cover"
                 />
-                <span className="image-label">2024 archive</span>
+                <span className="image-label">Past occasion</span>
               </Link>
               <div className="card-body">
                 <span className="eyebrow">{item.categoryLabel}</span>

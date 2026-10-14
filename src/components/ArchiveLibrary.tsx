@@ -41,7 +41,7 @@ export default function ArchiveLibrary() {
         </label>
       </div>
       <p role="status" className="small-note">
-        {results.length} records · June 2024 collection
+        {results.length} historical profiles and records
       </p>
       <div className="archive-grid">
         {results.map((e) => (
@@ -58,10 +58,7 @@ export default function ArchiveLibrary() {
               <span className="eyebrow">{e.category}</span>
               <h2>{e.title}</h2>
               <p>{e.summary}</p>
-              <span className="text-link">
-                Read record · {e.images.length}{" "}
-                {e.images.length === 1 ? "page" : "pages"} ↗
-              </span>
+              <span className="text-link">Read more ↗</span>
             </div>
           </Link>
         ))}

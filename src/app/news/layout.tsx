@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Palace Journal",
+  title: "News & stories",
   description:
-    "Explore source-based stories from the 2024 coronation anniversary programme, traditional leadership and palace heritage.",
+    "Palace announcements, community stories and moments from our history.",
   openGraph: {
-    title: "The Palace Journal · Palace of the Och'Idoma",
+    title: "News & stories · Palace of the Och'Idoma",
     description:
-      "Historical stories, biographies and community records from the June 2024 coronation anniversary programme.",
+      "News, community stories and the life of the traditional institution.",
   },
 };
 

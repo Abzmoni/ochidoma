@@ -35,11 +35,11 @@ export default async function Article({
   return (
     <div className="palace-container section-space">
       <Link href="/news" className="text-link">
-        ← Back to the palace journal
+        ← News & stories
       </Link>
       <article className="article-layout">
         <header>
-          <span className="eyebrow">{item.categoryLabel} · 2024 record</span>
+          <span className="eyebrow">{item.categoryLabel}</span>
           <h1 className="editorial-title">{item.title}</h1>
           <p className="small-note">
             {item.date} · {item.source}
@@ -61,16 +61,16 @@ export default async function Article({
             {paragraph}
           </p>
         ))}
-        <div className="editorial-note">
-          Historical summary based on the supplied programme. Offices and
-          scheduled activities reflect the 2024 publication.
-        </div>
+        <p className="content-attribution">
+          Share this page with its link. For content reuse, contact the Palace
+          Secretariat.
+        </p>
         <div className="button-row">
           <Link className="palace-button" href={`/archive/${item.sourceId}`}>
-            Read the source record ↗
+            Explore related history ↗
           </Link>
           <Link className="text-link" href="/archive#collection">
-            Browse the complete archive →
+            Heritage collection →
           </Link>
         </div>
         <ShareLink title={item.title} />

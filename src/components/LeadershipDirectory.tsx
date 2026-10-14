@@ -38,7 +38,7 @@ export default function LeadershipDirectory() {
       </div>
       <p className="small-note" role="status">
         {results.length} {results.length === 1 ? "profile" : "profiles"} shown ·
-        Historical chief profiles and the confirmed Council Secretary.
+        Historical chief records · Recent appointments may differ.
       </p>
       <div className="leadership-grid">
         {results.map((leader) => (
@@ -55,7 +55,7 @@ export default function LeadershipDirectory() {
               <span className="eyebrow">
                 {leader.rank === "Council Secretary"
                   ? "Council Secretariat"
-                  : "2024 programme record"}
+                  : "Traditional leadership"}
               </span>
               <h2>{leader.name}</h2>
               <p>{leader.title}</p>
@@ -78,7 +78,7 @@ export default function LeadershipDirectory() {
           </h2>
           <p>
             {rank === "Second class" || rank === "Community leadership"
-              ? "The supplied 2024 pages do not include this roster. Names and individual profiles will be added when the Palace Secretariat supplies the record."
+              ? "Names and profiles will be added as details are confirmed by the Palace Secretariat."
               : "Try another name, community or leadership class."}
           </p>
           <button

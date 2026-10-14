@@ -119,3 +119,15 @@ The user requested the original design imagery for the showcase. The original ho
 - Expanded Heritage into origins, the 1928 district organisation, four zonal headquarters, the 1947 central stool, five succession chapters and living heritage. The historical account remains attributed to the supplied programme; origin tradition is distinguished from established chronology.
 - Redesigned seven section introductions with photographic layouts, compact editorial headings, breadcrumbs and useful section links. Home, contact and giving page designs were left unchanged.
 - Production build, TypeScript and changed-source lint passed. Responsive checks cover 320, 390, 768 and 1440 pixels, plus the Secretary profile and heritage navigation.
+
+## Mobile usability review and public-copy revision
+- Applied the hero, news discovery, navigation readability, information architecture and council-search findings.
+- User explicitly rejected the recommendation to allow copying. Existing copy, cut, context-menu and drag deterrents, text-selection restrictions and print restriction remain active. These are browser deterrents, not absolute protection against extraction.
+- Removed source-book framing and repeated anniversary-publication references from rendered pages and metadata. Kept research provenance in this internal document and the source inventory. Historical appointment status and real event dates remain where relevant.
+- Reworked /archive as the Heritage collection of historical biographies and records; removed the public scanned-page viewer. Preserved existing URLs.
+- /news is consistently News & stories, with separate Stories and Announcements views. No current notices were invented; Announcements has an honest empty state.
+- News search/category/sort controls now expand on demand. Council search sits immediately below the page heading; historical status is concise and detailed context is expandable.
+- At 390px width: hero height 509px (previously 740px), headline top 142px, primary action top 338px, first story top 429px (review baseline approximately 945px), council search top 342px.
+- Navigation and functional metadata increased to approximately 14px; decorative labels retain smaller sizing.
+- Production build and changed-file ESLint passed. 83 browser checks cover routes, responsive layouts at 320/390/768/1280/1440px, source-reference removal, search/filter behavior, Secretary ordering, and retained copy/context-menu/print deterrents.
+- Visual screenshots, measurements and print-deterrent output: artifacts/feedback-review (ignored local QA artifacts).

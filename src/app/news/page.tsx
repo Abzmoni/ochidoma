@@ -1,22 +1,22 @@
-﻿"use client";
-import PageIntro from "@/components/PageIntro";
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { notices } from "@/lib/news";
 export default function News() {
-  const [category, setCategory] = useState("All news");
+  const [category, setCategory] = useState("All stories");
   const [query, setQuery] = useState("");
   const [order, setOrder] = useState("newest");
+  const [section, setSection] = useState("Stories");
   const categories = [
-    "All news",
-    ...new Set(notices.map((item) => item.categoryLabel)),
+    "All stories",
+    ...new Set(notices.map((i) => i.categoryLabel)),
   ];
   const results = notices
     .filter(
-      (item) =>
-        (category === "All news" || category === item.categoryLabel) &&
-        `${item.title} ${item.excerpt}`
+      (i) =>
+        (category === "All stories" || i.categoryLabel === category) &&
+        `${i.title} ${i.excerpt}`
           .toLowerCase()
           .includes(query.trim().toLowerCase()),
     )
@@ -27,94 +27,129 @@ export default function News() {
     );
   return (
     <>
-      <PageIntro
-        eyebrow="The palace journal"
-        title="From the palace."
-        description="Stories of our people, the traditional institution and the occasions worth remembering."
-        variant="journal"
-        links={[
-          { label: "Browse stories", href: "#journal" },
-          { label: "Explore the archive", href: "/archive" },
-        ]}
-      />
-      <section id="journal" className="palace-container section-space">
-        <div className="editorial-note">
-          From the archive · These articles summarise the June 2024 anniversary
-          programme. New palace announcements will appear separately when
-          supplied.
+      <header className="compact-heading">
+        <div className="palace-container">
+          <nav className="intro-breadcrumb" aria-label="Breadcrumb">
+            <Link href="/">Home</Link>
+            <span>/</span>
+            <span>News & stories</span>
+          </nav>
+          <h1>News & stories</h1>
+          <p>
+            Palace announcements, community stories and moments from our
+            history.
+          </p>
         </div>
-        <div className="filter-bar">
-          <label className="search-field">
-            Search the journal
-            <input
-              type="search"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search stories and announcements…"
-            />
-          </label>
-          <label className="search-field">
-            Sort stories
-            <select value={order} onChange={(e) => setOrder(e.target.value)}>
-              <option value="newest">Newest first</option>
-              <option value="oldest">Oldest first</option>
-            </select>
-          </label>
-        </div>
-        <div className="filter-pills" aria-label="Filter news">
-          {categories.map((item) => (
+      </header>
+      <section className="palace-container compact-content">
+        <div className="news-sections" aria-label="Content type">
+          {["Stories", "Announcements"].map((s) => (
             <button
-              key={item}
-              aria-pressed={category === item}
-              onClick={() => setCategory(item)}
+              key={s}
+              aria-pressed={section === s}
+              onClick={() => setSection(s)}
             >
-              {item}
+              {s}
             </button>
           ))}
+          <Link href="/archive">Heritage collection ↗</Link>
         </div>
-        <p className="small-note" role="status">
-          {results.length} {results.length === 1 ? "story" : "stories"} found
-        </p>
-        <div className="news-grid">
-          {results.map((item) => (
-            <article className="story-card" key={item.slug}>
-              <Link href={`/news/${item.slug}`} className="story-image">
-                <Image
-                  src={item.image}
-                  alt="Illustrative palace imagery"
-                  fill
-                  sizes="(max-width: 760px) 100vw, 33vw"
-                  className="object-cover"
-                />
-              </Link>
-              <div className="card-body">
-                <span className="eyebrow">{item.categoryLabel}</span>
-                <h2>
-                  <Link href={`/news/${item.slug}`}>{item.title}</Link>
-                </h2>
-                <p>{item.excerpt}</p>
-                <p className="small-note">{item.date}</p>
-                <Link className="text-link" href={`/news/${item.slug}`}>
-                  Read story →
-                </Link>
-              </div>
-            </article>
-          ))}
-        </div>
-        {!results.length && (
+        {section === "Announcements" ? (
           <div className="empty-state">
-            <h2>No stories found</h2>
-            <p>Try a different search or category.</p>
+            <h2>No current announcements</h2>
+            <p>New notices from the Palace Secretariat will appear here.</p>
             <button
               className="palace-button"
-              onClick={() => {
-                setQuery("");
-                setCategory("All news");
-              }}
+              onClick={() => setSection("Stories")}
             >
-              Clear filters
+              Explore stories
             </button>
           </div>
+        ) : (
+          <>
+            <details className="news-filters">
+              <summary>
+                Search & filter stories
+                {query || category !== "All stories" ? " · Filters active" : ""}
+              </summary>
+              <div className="filter-bar">
+                <label className="search-field">
+                  Search stories
+                  <input
+                    type="search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder="Search names, places or topics…"
+                  />
+                </label>
+                <label className="search-field">
+                  Sort stories
+                  <select
+                    value={order}
+                    onChange={(e) => setOrder(e.target.value)}
+                  >
+                    <option value="newest">Newest first</option>
+                    <option value="oldest">Oldest first</option>
+                  </select>
+                </label>
+              </div>
+              <div className="filter-pills" aria-label="Filter stories">
+                {categories.map((c) => (
+                  <button
+                    key={c}
+                    aria-pressed={category === c}
+                    onClick={() => setCategory(c)}
+                  >
+                    {c}
+                  </button>
+                ))}
+              </div>
+            </details>
+            <p className="small-note" role="status">
+              {results.length} {results.length === 1 ? "story" : "stories"} ·
+              Past events retain their original dates.
+            </p>
+            <div className="news-grid">
+              {results.map((i) => (
+                <article className="story-card" key={i.slug}>
+                  <Link href={`/news/${i.slug}`} className="story-image">
+                    <Image
+                      src={i.image}
+                      alt="Illustrative palace imagery"
+                      fill
+                      sizes="(max-width:760px) 100vw,33vw"
+                      className="object-cover"
+                    />
+                  </Link>
+                  <div className="card-body">
+                    <span className="eyebrow">{i.categoryLabel}</span>
+                    <h2>
+                      <Link href={`/news/${i.slug}`}>{i.title}</Link>
+                    </h2>
+                    <p>{i.excerpt}</p>
+                    <p className="small-note">{i.date}</p>
+                    <Link className="text-link" href={`/news/${i.slug}`}>
+                      Read story →
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+            {!results.length && (
+              <div className="empty-state">
+                <h2>No stories found</h2>
+                <button
+                  className="palace-button"
+                  onClick={() => {
+                    setQuery("");
+                    setCategory("All stories");
+                  }}
+                >
+                  Clear filters
+                </button>
+              </div>
+            )}
+          </>
         )}
       </section>
     </>

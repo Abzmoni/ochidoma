@@ -9,9 +9,9 @@ const navLinks = [
   { label: "The Throne", href: "/the-throne" },
   { label: "The Council", href: "/traditional-council" },
   { label: "Heritage", href: "/history-and-culture" },
-  { label: "News", href: "/news" },
+  { label: "News & stories", href: "/news" },
   { label: "Photos & Videos", href: "/gallery" },
-  { label: "Archive", href: "/archive" },
+  { label: "Collection", href: "/archive" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -61,7 +61,7 @@ function PalaceHeader({ pathname }: { pathname: string }) {
           : "bg-rich-black shadow-[0_4px_20px_rgba(0,0,0,0.35)]"
       }`}
     >
-      <div className="h-[var(--header-h)] max-w-[1200px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md">
+      <div className="h-[var(--header-h)] max-w-[1360px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md">
         {/* Brand */}
         <Link
           href="/"
@@ -88,7 +88,7 @@ function PalaceHeader({ pathname }: { pathname: string }) {
                   key={link.href}
                   href={link.href}
                   aria-current={active ? "page" : undefined}
-                  className={`relative font-body text-[11px] xl:text-[12px] font-semibold uppercase tracking-[0.09em] transition-colors px-space-sm xl:px-space-md py-space-sm ${
+                  className={`relative font-body text-[14px] font-semibold tracking-normal transition-colors px-space-sm xl:px-space-sm py-space-sm ${
                     active
                       ? "text-tertiary-fixed-dim"
                       : "text-surface-container hover:text-tertiary-fixed-dim"
@@ -109,7 +109,7 @@ function PalaceHeader({ pathname }: { pathname: string }) {
           <div className="flex items-center gap-space-sm">
             <Link
               href="/giving"
-              className="hidden xl:inline-flex items-center justify-center px-space-md md:px-space-lg py-space-sm rounded-lg bg-royal-gold text-rich-black font-body text-[11px] md:text-[12px] font-bold uppercase tracking-wider hover:bg-tertiary-fixed transition-colors shadow-sm"
+              className="hidden xl:inline-flex items-center justify-center px-space-md md:px-space-lg py-space-sm rounded-lg bg-royal-gold text-rich-black font-body text-[14px] font-bold tracking-normal hover:bg-tertiary-fixed transition-colors shadow-sm"
             >
               Support
             </Link>
@@ -152,7 +152,7 @@ function PalaceHeader({ pathname }: { pathname: string }) {
                   key={link.href}
                   href={link.href}
                   aria-current={active ? "page" : undefined}
-                  className={`font-body text-[14px] font-semibold uppercase tracking-wider py-space-md border-b border-surface-container/10 flex items-center justify-between transition-colors ${
+                  className={`font-body text-[15px] font-semibold tracking-normal py-space-md border-b border-surface-container/10 flex items-center justify-between transition-colors ${
                     active
                       ? "text-tertiary-fixed-dim"
                       : "text-surface-container hover:text-tertiary-fixed-dim"
