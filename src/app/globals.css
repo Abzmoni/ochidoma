@@ -1536,91 +1536,29 @@ textarea {
     margin-top: 32px;
   }
 }
-.archive-home-hero {
-  background: radial-gradient(
-    ellipse at 80% 50%,
-    #712d33 0,
-    #3b151d 50%,
-    #211014 100%
-  );
+
+.archive-record-mark {
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  background: #ede2d0;
+  color: #75592f;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-bottom: 1px solid #ded0b8;
 }
-.hero-source-cover {
-  position: absolute;
-  width: 36%;
-  max-width: 430px;
-  top: calc(var(--header-h) + 55px);
-  bottom: 55px;
-  right: max(6%, calc((100vw - 1200px) / 2));
-  border: 1px solid #bfa57566;
-  background: #21101466;
-  box-shadow: 0 24px 70px #10060866;
-}
-.archive-home-hero .hero-content {
-  position: relative;
-  pointer-events: none;
-}
-.archive-home-hero .hero-content a {
-  pointer-events: auto;
-}
-.archive-home-hero .hero-content h1 {
-  font-size: clamp(43px, 4.7vw, 66px);
-}
-.archive-home-hero .hero-content > p {
-  max-width: 50%;
-}
-.story-image:has(img[src*="coronation-2024"]),
-.feature-photo,
-.throne-photo {
-  background: #e4dbce;
-}
-.throne-photo img {
-  object-fit: contain;
-}
-@media (max-width: 1000px) and (min-width: 761px) {
-  .archive-home-hero .hero-content h1 {
-    font-size: 44px;
-  }
-  .hero-source-cover {
-    right: 4%;
-    width: 34%;
-  }
-  .archive-home-hero .button-row {
-    max-width: 52%;
-  }
-  .archive-home-hero .hero-caption {
-    max-width: 52%;
-    flex-wrap: wrap;
-  }
+.archive-cover img {
+  object-fit: cover;
 }
 @media (max-width: 760px) {
-  .archive-home-hero {
-    height: auto;
-    min-height: 0;
-    padding-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  .archive-home-hero .hero-content {
-    order: 0;
-    padding-bottom: 32px;
-  }
-  .archive-home-hero .hero-content > p {
-    max-width: 100%;
-  }
-  .hero-source-cover {
-    position: relative;
-    order: 1;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    width: calc(100% - 48px);
-    height: 380px;
-    margin: 0 auto;
-  }
-  .archive-home-hero .hero-caption {
-    margin-top: 28px;
-  }
-  .archive-home-hero .hero-content h1 {
-    font-size: clamp(40px, 9vw, 58px);
+  .archive-record-mark {
+    height: 100%;
+    min-height: 150px;
+    padding: 14px;
+    text-align: center;
   }
 }

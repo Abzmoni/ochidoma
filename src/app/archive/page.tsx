@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ArchiveLibrary from "@/components/ArchiveLibrary";
-import { archiveImage } from "@/lib/archive";
+import { heritageImages } from "@/lib/media";
 export const metadata: Metadata = {
   title: "Palace Archive · Coronation Anniversary 2024",
   description:
@@ -28,8 +28,8 @@ export default function Archive() {
         <div className="archive-feature">
           <div className="archive-cover">
             <Image
-              src={archiveImage(18)}
-              alt="Cover of the second coronation anniversary programme, 29 June 2024"
+              src={heritageImages[0].src}
+              alt={heritageImages[0].alt}
               width={960}
               height={1280}
               priority

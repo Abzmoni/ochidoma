@@ -1,3 +1,4 @@
+import { heritageImages } from "@/lib/media";
 export const notices = [
   {
     id: 0,
@@ -7,7 +8,7 @@ export const notices = [
     title: "The second coronation anniversary: a programme of celebration",
     excerpt:
       "The 2024 programme brings together the traditional council, cultural performances and chieftaincy recognition at the Och’Idoma Palace in Otukpo.",
-    image: "/archive/coronation-2024/source-18.jpg",
+    image: heritageImages[2].src,
     source: "Second Coronation Anniversary Programme",
     slug: "second-coronation-anniversary-2024",
     sourceId: "anniversary-programme",
@@ -25,7 +26,7 @@ export const notices = [
     title: "The chiefs and communities recorded in the anniversary programme",
     excerpt:
       "Meet four first-class chiefs and seventeen third-class chiefs listed in the 2024 publication, with individual pages and searchable communities.",
-    image: "/archive/coronation-2024/source-07.jpg",
+    image: heritageImages[3].src,
     source: "Second Coronation Anniversary Programme",
     slug: "traditional-leadership-2024",
     sourceId: "first-class-chiefs",
@@ -43,7 +44,7 @@ export const notices = [
     title: "Preserving the story of the Och’Idoma stool",
     excerpt:
       "A historical account follows the central stool from its establishment in 1947 through five chapters of leadership.",
-    image: "/archive/coronation-2024/source-05.jpg",
+    image: heritageImages[1].src,
     source: "Second Coronation Anniversary Programme",
     slug: "history-of-the-stool",
     sourceId: "history-of-the-stool",
@@ -61,7 +62,7 @@ export const notices = [
     title: "Education, health and service in the anniversary citations",
     excerpt:
       "The programme’s biographies recognise contributions across medicine, education, sport, enterprise and community development.",
-    image: "/archive/coronation-2024/source-37.jpg",
+    image: heritageImages[0].src,
     source: "Second Coronation Anniversary Programme",
     slug: "community-service-citations",
     sourceId: "silas-ochejele",

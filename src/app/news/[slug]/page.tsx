@@ -48,14 +48,12 @@ export default async function Article({
         <div className="article-image">
           <Image
             src={item.image}
-            alt={`Programme source: ${item.title}`}
+            alt="Illustrative palace imagery"
             fill
             sizes="(max-width: 900px) 100vw, 850px"
             className="object-cover"
           />
-          <span className="photo-credit">
-            2024 programme · Photographed source
-          </span>
+          <span className="photo-credit">Illustrative palace imagery</span>
         </div>
         <p className="intro-copy">{item.excerpt}</p>
         {item.body.map((paragraph) => (

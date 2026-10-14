@@ -1,6 +1,9 @@
 import heroImg from "@/assets/images/hero-ochidoma-v.jpg";
+import heritage1 from "@/assets/images/heritage-01.jpg";
+import heritage2 from "@/assets/images/heritage-02.jpg";
+import heritage3 from "@/assets/images/heritage-03.jpg";
+import heritage4 from "@/assets/images/heritage-04.jpg";
 import type { StaticImageData } from "next/image";
-import { archiveImage } from "@/lib/archive";
 export const cdn = (url: string) =>
   !url.startsWith("http") || /=[\w-]+$/.test(url) ? url : `${url}=s0`;
 export type LandingImage = { src: string | StaticImageData; tone: string };
@@ -14,56 +17,40 @@ export type HeritageImage = LandingImage & {
 export const heritageImages: HeritageImage[] = [
   {
     n: "01",
-    label: "The royal biography",
-    alt: "Printed biography and portrait of Och’Idoma V in the 2024 programme",
-    src: archiveImage(1),
-    tone: "#e8dfd1",
+    label: "Royal Regalia",
+    alt: "Illustrative royal portrait from the original design collection",
+    src: heritage1,
+    tone: "#4a371d",
     category: "Royal life",
   },
   {
     n: "02",
-    label: "Culture & community",
-    alt: "A printed photographic spread showing cultural performance and community gatherings",
-    src: archiveImage(31),
-    tone: "#e8dfd1",
-    category: "Culture & ceremonies",
+    label: "Palace Grounds",
+    alt: "Palace building and landscaped grounds from the original design collection",
+    src: heritage2,
+    tone: "#5c1a1f",
+    category: "Palace & heritage",
   },
   {
     n: "03",
-    label: "Palace audiences",
-    alt: "A printed collage of palace audiences and ceremonial gatherings",
-    src: archiveImage(28),
-    tone: "#e8dfd1",
-    category: "Palace gatherings",
+    label: "Ceremonial Gathering",
+    alt: "Traditional ruler surrounded by attendees in the original design collection",
+    src: heritage3,
+    tone: "#3b3026",
+    category: "Culture & ceremonies",
   },
   {
     n: "04",
-    label: "Royal life in the album",
-    alt: "Photographs of royal and family occasions reproduced in the programme",
-    src: archiveImage(35),
-    tone: "#e8dfd1",
+    label: "Palace Address",
+    alt: "Seated traditional ruler speaking into a microphone in the original design collection",
+    src: heritage4,
+    tone: "#44301d",
     category: "Royal life",
-  },
-  {
-    n: "05",
-    label: "Gatherings & engagements",
-    alt: "A photographic spread of palace engagements in the anniversary programme",
-    src: archiveImage(29),
-    tone: "#e8dfd1",
-    category: "Palace gatherings",
-  },
-  {
-    n: "06",
-    label: "Ceremonial occasions",
-    alt: "Printed photographs of ceremonial and worship occasions",
-    src: archiveImage(30),
-    tone: "#e8dfd1",
-    category: "Culture & ceremonies",
   },
 ];
 export const ogImage = {
-  url: archiveImage(18),
-  width: 960,
-  height: 1280,
-  alt: "Second coronation anniversary programme of Och’Idoma V, June 2024",
+  url: heroImg.src,
+  width: heroImg.width,
+  height: heroImg.height,
+  alt: "Palace of the Och’Idoma · Original design artwork",
 };

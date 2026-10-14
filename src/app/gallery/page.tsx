@@ -56,15 +56,14 @@ export default function Gallery() {
           <p>Select a photograph to explore the collection.</p>
         </div>
         <div className="editorial-note">
-          From the 2024 programme · These are photographs of printed album
-          pages. Scenes are not individually dated or captioned; no identities
-          have been inferred.
+          Original palace design collection · Illustrative imagery, separate
+          from the historical source documents.
         </div>
         <div className="filter-pills" aria-label="Filter photographs">
           {[
             "All photographs",
             "Royal life",
-            "Palace gatherings",
+            "Palace & heritage",
             "Culture & ceremonies",
           ].map((item) => (
             <button
@@ -80,7 +79,7 @@ export default function Gallery() {
           ))}
         </div>
         <p className="small-note" role="status">
-          {visible.length} album pages
+          {visible.length} photographs
         </p>
         <div className="photo-grid">
           {visible.map((photo, index) => (
@@ -96,9 +95,9 @@ export default function Gallery() {
                   alt={`${photo.alt}`}
                   fill
                   sizes="(max-width: 760px) 100vw, 50vw"
-                  className="object-contain"
+                  className="object-cover"
                 />
-                <span className="photo-credit">2024 programme collection</span>
+                <span className="photo-credit">Palace design collection</span>
                 <span className="photo-expand" aria-hidden="true">
                   ↗
                 </span>
@@ -162,8 +161,8 @@ export default function Gallery() {
                 <h3>A home for the palace’s moving stories.</h3>
                 <p>
                   Ceremony films and royal addresses will appear here when
-                  recordings are supplied. For now, explore the programme’s
-                  photographic collection and historical records.
+                  recordings are supplied. For now, explore the image collection
+                  and historical records.
                 </p>
                 <div className="filter-pills">
                   <span>Royal addresses</span>
@@ -222,7 +221,7 @@ export default function Gallery() {
                   className="object-contain"
                 />
                 <span className="photo-credit">
-                  2024 programme collection · Reuse by permission
+                  Palace design collection · Reuse by permission
                 </span>
               </div>
               <div className="dialog-caption">
@@ -236,7 +235,7 @@ export default function Gallery() {
                 <div>
                   <h2 id="photo-dialog-title">{active.label}</h2>
                   <p>
-                    {selected + 1} of {visible.length} · Programme photograph
+                    {selected + 1} of {visible.length} · Design collection
                   </p>
                 </div>
                 <button

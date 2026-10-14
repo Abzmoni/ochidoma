@@ -84,7 +84,7 @@ export default function News() {
               <Link href={`/news/${item.slug}`} className="story-image">
                 <Image
                   src={item.image}
-                  alt={`Programme source: ${item.title}`}
+                  alt="Illustrative palace imagery"
                   fill
                   sizes="(max-width: 760px) 100vw, 33vw"
                   className="object-cover"

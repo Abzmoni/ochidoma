@@ -62,7 +62,7 @@ export default async function Record({
             identify the supplied images, not printed page numbers.
           </p>
           {entry.images.map((id, index) => (
-            <details className="source-page" key={id} open={index === 0}>
+            <details className="source-page" key={id}>
               <summary>
                 Page {index + 1} of {entry.images.length} · Source{" "}
                 {String(id).padStart(2, "0")}

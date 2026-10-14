@@ -33,9 +33,7 @@ export default function TheThrone() {
               sizes="(max-width: 760px) 100vw, 40vw"
               className="object-cover"
             />
-            <span className="photo-credit">
-              Royal portrait page · 2024 programme
-            </span>
+            <span className="photo-credit">Illustrative royal portrait</span>
           </div>
           <article>
             <span className="eyebrow">His Royal Majesty · Agaba’Idu</span>

@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
+import RoyalCrest from "@/components/RoyalCrest";
 import Link from "next/link";
-import { archiveEntries, archiveImage } from "@/lib/archive";
+import { archiveEntries } from "@/lib/archive";
 export default function ArchiveLibrary() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("All records");
@@ -50,14 +50,9 @@ export default function ArchiveLibrary() {
             key={e.slug}
             className="archive-card"
           >
-            <div className="archive-thumb">
-              <Image
-                src={archiveImage(e.images[0])}
-                alt={`Printed programme page: ${e.title}`}
-                fill
-                sizes="(max-width:760px) 45vw, 25vw"
-                className="object-contain"
-              />
+            <div className="archive-record-mark" aria-hidden="true">
+              <RoyalCrest className="w-12 h-12" />
+              <span>{e.category}</span>
             </div>
             <div className="card-body">
               <span className="eyebrow">{e.category}</span>

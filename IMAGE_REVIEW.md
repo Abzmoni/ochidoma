@@ -109,3 +109,6 @@ Reviewed all 67 JPEGs in the supplied WhatsApp folder, plus its one MP4. The pal
 - Verified class/search filters, missing-roster messaging, acting designation, profile-to-source navigation, archive search/reset, source-page expansion, journal articles, gallery keyboard navigation and mobile archive navigation.
 - Screenshots and detailed results are saved locally in ignored artifacts/archive-review.
 - 47 selected source photographs copied to the public archive (approximately 10.9 MB total); Next Image serves responsive variants.
+
+## Visual presentation update
+The user requested the original design imagery for the showcase. The original homepage hero and four-image collection are restored across the homepage, throne, journal, gallery and archive introduction. Archive listings use crest-led cards. Book photographs remain solely inside closed source-page disclosure controls, available on request as historical evidence. The extracted content and named profiles remain intact. Final palace photography can replace the shared assets in src/lib/media.ts.

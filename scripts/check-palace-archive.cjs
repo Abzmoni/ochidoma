@@ -164,11 +164,11 @@ const fs = require("node:fs");
   assert.equal(await page.locator(".article-paragraph").count(), 3);
   checks.push("Journal search and complete article");
   await page.goto(base + "/gallery");
-  assert.equal(await page.locator(".photo-card").count(), 6);
+  assert.equal(await page.locator(".photo-card").count(), 4);
   await page
     .getByRole("button", { name: "Culture & ceremonies", exact: true })
     .click();
-  assert.equal(await page.locator(".photo-card").count(), 2);
+  assert.equal(await page.locator(".photo-card").count(), 1);
   await page.locator(".photo-card").first().click();
   assert(await page.locator("dialog").isVisible());
   await page.keyboard.press("ArrowRight");

@@ -1,24 +1,22 @@
 ﻿import Image from "next/image";
 import Link from "next/link";
-import { heritageImages } from "@/lib/media";
-import { archiveImage } from "@/lib/archive";
+import { heritageImages, heroImage } from "@/lib/media";
 import { notices } from "@/lib/news";
 
 export default function Home() {
   return (
     <>
-      <section className="palace-hero archive-home-hero">
-        <div className="hero-source-cover">
-          <Image
-            src={archiveImage(18)}
-            alt="The 2024 second coronation anniversary programme of Och’Idoma V"
-            fill
-            loading="eager"
-            fetchPriority="high"
-            sizes="(max-width: 760px) 85vw, 40vw"
-            className="object-contain"
-          />
-        </div>
+      <section className="palace-hero">
+        <Image
+          src={heroImage.src}
+          alt="Original palace design artwork"
+          fill
+          loading="eager"
+          fetchPriority="high"
+          sizes="(max-width: 760px) 1400px, 100vw"
+          className="object-cover"
+        />
+        <div className="palace-hero-shade" />
         <div className="palace-container hero-content">
           <span className="eyebrow">The palace · The council · The people</span>
           <h1>
@@ -99,15 +97,13 @@ export default function Home() {
         <div className="palace-container council-feature-grid">
           <div className="feature-photo">
             <Image
-              src={archiveImage(7)}
-              alt="Four first-class chiefs pictured and named in the 2024 programme"
+              src={heritageImages[2].src}
+              alt={heritageImages[2].alt}
               fill
               sizes="(max-width: 760px) 100vw, 50vw"
-              className="object-contain"
+              className="object-cover"
             />
-            <span className="photo-credit">
-              Photographs from the 2024 programme
-            </span>
+            <span className="photo-credit">Palace design collection</span>
           </div>
           <div className="feature-copy">
             <span className="eyebrow">A shared responsibility</span>
@@ -157,7 +153,7 @@ export default function Home() {
               <Link href={`/news/${item.slug}`} className="story-image">
                 <Image
                   src={item.image}
-                  alt={`Programme source: ${item.title}`}
+                  alt="Illustrative palace imagery"
                   fill
                   sizes="(max-width: 760px) 100vw, 33vw"
                   className="object-cover"
