@@ -119,7 +119,8 @@ const fs = require("node:fs");
     }
   }
   await page.goto(base + "/traditional-council");
-  assert.equal(await page.locator(".leader-card").count(), 22);
+  assert.equal(await page.locator(".leader-card").count(), 23);
+  assert.equal(await page.locator(".leader-card h2").nth(1).innerText(), "Dr. Adegbe Uloko");
   await page.getByRole("combobox").selectOption("First class");
   assert.equal(await page.locator(".leader-card").count(), 4);
   await page.getByRole("combobox").selectOption("Second class");

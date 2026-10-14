@@ -1,4 +1,5 @@
-﻿import type { Metadata } from "next";
+﻿import PageIntro from "@/components/PageIntro";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { heritageImages } from "@/lib/media";
@@ -10,20 +11,17 @@ export const metadata: Metadata = {
 export default function TheThrone() {
   return (
     <>
-      <section className="page-intro">
-        <div className="palace-container">
-          <span className="eyebrow">The paramount stool</span>
-          <h1>
-            A custodian of heritage.
-            <br />A symbol of unity.
-          </h1>
-          <p>
-            The office of the Och’Idoma sits at the heart of a wider traditional
-            institution, connecting the palace, the chiefs and the people.
-          </p>
-        </div>
-      </section>
-      <section className="palace-container section-space">
+      <PageIntro
+        eyebrow="The throne"
+        title="The Och’Idoma."
+        description="The paramount stool, the life of Och’Idoma V and a tradition of service to the Idoma nation."
+        imageIndex={0}
+        links={[
+          { label: "Life & biography", href: "#royal-biography" },
+          { label: "The royal household", href: "/archive/royal-household" },
+        ]}
+      />
+      <section id="royal-biography" className="palace-container section-space">
         <div className="profile-layout">
           <div className="throne-photo">
             <Image

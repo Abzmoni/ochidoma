@@ -1,5 +1,6 @@
 export const leadershipClasses = [
   "Paramount ruler",
+  "Council Secretary",
   "First class",
   "Second class",
   "Third class",
@@ -31,6 +32,19 @@ export const leaders: Leader[] = [
     confirmed: true,
     sourceId: "royal-biography",
     sourceImage: 1,
+  },
+  {
+    slug: "council-secretary",
+    name: "Dr. Adegbe Uloko",
+    title: "Council Secretary",
+    rank: "Council Secretary",
+    community: "Idoma Area Traditional Council",
+    area: "Palace Secretariat",
+    biography:
+      "Dr. Adegbe Uloko is the Council Secretary of the Idoma Area Traditional Council. His profile brings the Council Secretariat into the directory alongside the paramount ruler and the chiefs. Further biographical details and an official portrait will be added to this page.",
+    confirmed: true,
+    sourceId: "",
+    sourceImage: 0,
   },
   {
     slug: "george-edeh",

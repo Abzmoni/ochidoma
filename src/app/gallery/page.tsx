@@ -1,4 +1,5 @@
 ﻿"use client";
+import PageIntro from "@/components/PageIntro";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -25,28 +26,17 @@ export default function Gallery() {
   const active = visible[selected];
   return (
     <>
-      <section className="page-intro">
-        <div className="palace-container">
-          <span className="eyebrow">The palace media library</span>
-          <h1>
-            Our heritage.
-            <br />
-            Seen, heard, remembered.
-          </h1>
-          <p>
-            A place for photographs, royal addresses, cultural ceremonies and
-            the voices of our communities.
-          </p>
-          <div className="button-row">
-            <a className="palace-button" href="#photographs">
-              Explore photographs ↓
-            </a>
-            <a className="palace-button secondary" href="#videos">
-              Explore videos ↓
-            </a>
-          </div>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow="Photos & videos"
+        title="Life around the palace."
+        description="A visual journey through royal life, cultural gatherings and the places that hold our stories."
+        imageIndex={2}
+        variant="panorama"
+        links={[
+          { label: "Photographs", href: "#photographs" },
+          { label: "Films & addresses", href: "#videos" },
+        ]}
+      />
       <section id="photographs" className="palace-container section-space">
         <div className="section-heading">
           <div>

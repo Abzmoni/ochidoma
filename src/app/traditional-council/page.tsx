@@ -1,3 +1,4 @@
+import PageIntro from "@/components/PageIntro";
 import type { Metadata } from "next";
 import LeadershipDirectory from "@/components/LeadershipDirectory";
 
@@ -9,21 +10,17 @@ export const metadata: Metadata = {
 export default function CouncilPage() {
   return (
     <>
-      <section className="page-intro">
-        <div className="palace-container">
-          <span className="eyebrow">Our traditional institution</span>
-          <h1>
-            Many custodians.
-            <br />
-            One shared heritage.
-          </h1>
-          <p>
-            The Och’Idoma, first, second and third class chiefs, and community
-            leaders all have a place in the story of our people.
-          </p>
-        </div>
-      </section>
-      <section className="palace-container section-space">
+      <PageIntro
+        eyebrow="The traditional council"
+        title="The people behind the institution."
+        description="Meet the Och’Idoma, the Council Secretary and the chiefs who represent our communities."
+        imageIndex={2}
+        links={[
+          { label: "Leadership directory", href: "#directory" },
+          { label: "The paramount stool", href: "/the-throne" },
+        ]}
+      />
+      <section id="directory" className="palace-container section-space">
         <div className="section-heading">
           <div>
             <span className="eyebrow">Leadership directory</span>
@@ -32,8 +29,9 @@ export default function CouncilPage() {
           <p>Discover each office, its communities and its story.</p>
         </div>
         <div className="editorial-note">
-          Historical roster · 22 named profiles from the June 2024 anniversary
-          programme. This is not a current appointments register. Second-class
+          Chief profiles follow the June 2024 anniversary programme. The Council
+          Secretary’s name and title have been confirmed separately. The
+          historical roster is not a current appointments register. Second-class
           and community leadership rosters were not included in the supplied
           pages.
         </div>

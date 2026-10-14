@@ -1,4 +1,5 @@
 ﻿"use client";
+import PageIntro from "@/components/PageIntro";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -26,21 +27,17 @@ export default function News() {
     );
   return (
     <>
-      <section className="page-intro">
-        <div className="palace-container">
-          <span className="eyebrow">The palace journal</span>
-          <h1>
-            Stories from the palace.
-            <br />
-            News for our people.
-          </h1>
-          <p>
-            Royal statements, community developments and cultural gatherings.
-            Stay close to the life of the traditional institution.
-          </p>
-        </div>
-      </section>
-      <section className="palace-container section-space">
+      <PageIntro
+        eyebrow="The palace journal"
+        title="From the palace."
+        description="Stories of our people, the traditional institution and the occasions worth remembering."
+        variant="journal"
+        links={[
+          { label: "Browse stories", href: "#journal" },
+          { label: "Explore the archive", href: "/archive" },
+        ]}
+      />
+      <section id="journal" className="palace-container section-space">
         <div className="editorial-note">
           From the archive · These articles summarise the June 2024 anniversary
           programme. New palace announcements will appear separately when

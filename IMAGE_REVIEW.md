@@ -112,3 +112,10 @@ Reviewed all 67 JPEGs in the supplied WhatsApp folder, plus its one MP4. The pal
 
 ## Visual presentation update
 The user requested the original design imagery for the showcase. The original homepage hero and four-image collection are restored across the homepage, throne, journal, gallery and archive introduction. Archive listings use crest-led cards. Book photographs remain solely inside closed source-page disclosure controls, available on request as historical evidence. The extracted content and named profiles remain intact. Final palace photography can replace the shared assets in src/lib/media.ts.
+
+## Council, heritage and page-introduction update
+- Project owner confirmed Dr. Adegbe Uloko as Council Secretary. The directory now places him immediately after the Och'Idoma and before first-class chiefs, with a dedicated profile. The confirmation is separate from the 2024 roster; no unsupported biography or portrait was supplied.
+- The planning-committee archive summary uses his confirmed name/title while keeping Adole Ejah's distinct anniversary committee role.
+- Expanded Heritage into origins, the 1928 district organisation, four zonal headquarters, the 1947 central stool, five succession chapters and living heritage. The historical account remains attributed to the supplied programme; origin tradition is distinguished from established chronology.
+- Redesigned seven section introductions with photographic layouts, compact editorial headings, breadcrumbs and useful section links. Home, contact and giving page designs were left unchanged.
+- Production build, TypeScript and changed-source lint passed. Responsive checks cover 320, 390, 768 and 1440 pixels, plus the Secretary profile and heritage navigation.

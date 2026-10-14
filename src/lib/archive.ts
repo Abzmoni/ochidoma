@@ -60,7 +60,7 @@ export const archiveEntries: ArchiveEntry[] = [
     category: "Programme",
     images: [24, 21],
     summary:
-      "The Central Planning Committee is chaired by HRH Emmanuel Okochi. The programme lists 21 committee members, with Pst. Adole Ejah, PhD, as secretary, and includes the committee’s message of appreciation.",
+      "The Central Planning Committee is chaired by HRH Emmanuel Okochi. The programme lists 21 committee members, with Pst. Adole Ejah, PhD, as planning-committee secretary, and includes the committee’s message of appreciation. Council Secretary Dr. Adegbe Uloko also appears in the programme’s committee list. The planning-committee role and Council Secretary are separate offices.",
   },
   {
     slug: "palace-in-pictures",

@@ -1,3 +1,4 @@
+import PageIntro from "@/components/PageIntro";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,19 +12,16 @@ export const metadata: Metadata = {
 export default function Archive() {
   return (
     <>
-      <section className="page-intro">
-        <div className="palace-container">
-          <span className="eyebrow">The palace archive · Collection 01</span>
-          <h1>
-            A record of our people.
-            <br />A legacy to remember.
-          </h1>
-          <p>
-            Discover the names, stories and photographs preserved in the second
-            coronation anniversary programme.
-          </p>
-        </div>
-      </section>
+      <PageIntro
+        eyebrow="The palace archive"
+        title="Our memory, preserved."
+        description="Explore the biographies, names and historical records collected in the 2024 coronation anniversary programme."
+        variant="journal"
+        links={[
+          { label: "Search the collection", href: "#collection" },
+          { label: "Read our history", href: "/history-and-culture" },
+        ]}
+      />
       <section className="palace-container section-space">
         <div className="archive-feature">
           <div className="archive-cover">

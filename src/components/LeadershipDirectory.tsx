@@ -28,7 +28,7 @@ export default function LeadershipDirectory() {
           />
         </label>
         <label className="search-field">
-          Leadership class
+          Office or leadership class
           <select value={rank} onChange={(e) => setRank(e.target.value)}>
             {["All leadership", ...leadershipClasses].map((value) => (
               <option key={value}>{value}</option>
@@ -38,7 +38,7 @@ export default function LeadershipDirectory() {
       </div>
       <p className="small-note" role="status">
         {results.length} {results.length === 1 ? "profile" : "profiles"} shown ·
-        Names recorded in the June 2024 programme.
+        Historical chief profiles and the confirmed Council Secretary.
       </p>
       <div className="leadership-grid">
         {results.map((leader) => (
@@ -52,7 +52,11 @@ export default function LeadershipDirectory() {
               <span>{leader.rank}</span>
             </div>
             <div className="card-body">
-              <span className="eyebrow">2024 programme record</span>
+              <span className="eyebrow">
+                {leader.rank === "Council Secretary"
+                  ? "Council Secretariat"
+                  : "2024 programme record"}
+              </span>
               <h2>{leader.name}</h2>
               <p>{leader.title}</p>
               <p className="small-note">

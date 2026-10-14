@@ -38,18 +38,24 @@ export default async function LeaderPage({
           <RoyalCrest className="w-36 h-36" />
           <span className="eyebrow">{l.rank}</span>
           <p>Idoma traditional institution</p>
-          <span className="archive-badge">Recorded June 2024</span>
+          <span className="archive-badge">
+            {l.rank === "Council Secretary"
+              ? "Council Secretariat"
+              : "Recorded June 2024"}
+          </span>
         </aside>
         <article>
           <span className="eyebrow">{l.title}</span>
           <h1 className="editorial-title">{l.name}</h1>
           <p className="intro-copy">{l.community}</p>
           <div className="editorial-note">
-            From the 2024 coronation anniversary programme. This entry records
-            the published roster; current officeholder updates await the Palace
-            Secretariat.
+            {l.rank === "Council Secretary"
+              ? "Council Secretariat · Full biography and official portrait to follow."
+              : "From the 2024 coronation anniversary programme. This entry records the published roster; current officeholder updates await the Palace Secretariat."}
           </div>
-          <h2 className="subheading">About this record</h2>
+          <h2 className="subheading">
+            {l.confirmed ? "About this record" : "About the office"}
+          </h2>
           <p>{l.biography}</p>
           <div className="profile-facts">
             <div>
@@ -57,7 +63,7 @@ export default async function LeaderPage({
               <strong>{l.rank}</strong>
             </div>
             <div>
-              <span>Area in the programme</span>
+              <span>Office / area</span>
               <strong>{l.area}</strong>
             </div>
             <div>
@@ -66,9 +72,11 @@ export default async function LeaderPage({
             </div>
           </div>
           <div className="button-row">
-            <Link className="palace-button" href={`/archive/${l.sourceId}`}>
-              View the source record ↗
-            </Link>
+            {l.sourceId && (
+              <Link className="palace-button" href={`/archive/${l.sourceId}`}>
+                View the source record ↗
+              </Link>
+            )}
             <ShareLink title={l.name} />
           </div>
           <h2 className="subheading">Office & community enquiries</h2>
