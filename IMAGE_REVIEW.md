@@ -131,3 +131,9 @@ The user requested the original design imagery for the showcase. The original ho
 - Navigation and functional metadata increased to approximately 14px; decorative labels retain smaller sizing.
 - Production build and changed-file ESLint passed. 83 browser checks cover routes, responsive layouts at 320/390/768/1280/1440px, source-reference removal, search/filter behavior, Secretary ordering, and retained copy/context-menu/print deterrents.
 - Visual screenshots, measurements and print-deterrent output: artifacts/feedback-review (ignored local QA artifacts).
+
+## Cultural colour direction
+- Applied the owner's black and red primary palette, supported by white and blue for the requested Idoma and Igede-inspired direction.
+- Integrated a restrained four-colour stripe motif into section introductions, the council feature, crest panels, footer and small homepage borders. Kept reading surfaces clear and preserved the original homepage photograph.
+- Updated buttons, navigation accents, crest colours and supporting surfaces to match. Retained compact mobile layouts and all requested content-copy deterrents.
+- Production build and all 83 browser checks passed. Desktop homepage and Heritage screenshots and mobile News screenshots were visually reviewed; evidence remains in artifacts/feedback-review.

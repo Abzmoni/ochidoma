@@ -84,7 +84,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col bg-surface text-on-surface font-body">
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-space-sm focus:left-space-sm focus:z-[60] focus:px-space-lg focus:py-space-sm focus:rounded-lg focus:bg-royal-gold focus:text-rich-black focus:font-body focus:text-[12px] focus:font-bold focus:uppercase focus:tracking-wider"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-space-sm focus:left-space-sm focus:z-[60] focus:px-space-lg focus:py-space-sm focus:rounded-lg focus:bg-royal-gold focus:text-white focus:font-body focus:text-[12px] focus:font-bold focus:uppercase focus:tracking-wider"
         >
           Skip to content
         </a>

@@ -109,7 +109,7 @@ function PalaceHeader({ pathname }: { pathname: string }) {
           <div className="flex items-center gap-space-sm">
             <Link
               href="/giving"
-              className="hidden xl:inline-flex items-center justify-center px-space-md md:px-space-lg py-space-sm rounded-lg bg-royal-gold text-rich-black font-body text-[14px] font-bold tracking-normal hover:bg-tertiary-fixed transition-colors shadow-sm"
+              className="hidden xl:inline-flex items-center justify-center px-space-md md:px-space-lg py-space-sm rounded-lg bg-royal-gold text-white font-body text-[14px] font-bold tracking-normal hover:bg-regal-red-dark transition-colors shadow-sm"
             >
               Support
             </Link>
@@ -173,7 +173,7 @@ function PalaceHeader({ pathname }: { pathname: string }) {
             <div className="mt-space-lg mb-space-sm">
               <Link
                 href="/giving"
-                className="flex items-center justify-center w-full px-space-md py-space-md rounded-lg bg-royal-gold text-rich-black font-body text-[14px] font-bold uppercase tracking-wider hover:bg-tertiary-fixed transition-colors shadow-sm"
+                className="flex items-center justify-center w-full px-space-md py-space-md rounded-lg bg-royal-gold text-white font-body text-[14px] font-bold uppercase tracking-wider hover:bg-regal-red-dark transition-colors shadow-sm"
               >
                 Support
               </Link>
