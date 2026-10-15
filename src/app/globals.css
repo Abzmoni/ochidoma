@@ -2097,25 +2097,19 @@ main [contenteditable="true"],
   --palace-blue: #2454a0;
   --cultural-stripes: repeating-linear-gradient(
     112deg,
-    #0b0c10 0 28px,
-    #b5142b 28px 48px,
-    #0b0c10 48px 58px,
-    #fafafa 58px 63px,
-    #2454a0 63px 74px,
-    #fafafa 74px 77px,
-    #0b0c10 77px 100px
+    #b5142b 0 30px,
+    #0b0c10 30px 75px,
+    #2454a0 75px 92px,
+    #fafafa 92px 100px
   );
 }
 .idoma-weave {
   background-image: repeating-linear-gradient(
     90deg,
-    #0b0c10 0 16px,
-    #b5142b 16px 29px,
-    #0b0c10 29px 35px,
-    #fafafa 35px 39px,
-    #2454a0 39px 48px,
-    #fafafa 48px 50px,
-    #0b0c10 50px 64px
+    #b5142b 0 19px,
+    #0b0c10 19px 48px,
+    #2454a0 48px 59px,
+    #fafafa 59px 64px
   );
 }
 .idoma-weave-diagonal {
