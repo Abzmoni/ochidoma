@@ -760,14 +760,19 @@ html {
 .contact-band {
   border-top: 1px solid #cdb78e;
   border-bottom: 1px solid #cdb78e;
-  padding: 36px 0;
+  padding: clamp(24px, 4vw, 40px);
   display: flex;
   align-items: center;
   gap: 40px;
   justify-content: space-between;
 }
-.contact-band > div {
+.contact-band > div:first-child {
+  flex: 1;
+  min-width: 0;
   max-width: 690px;
+}
+.gateway-grid + .contact-band {
+  margin-top: clamp(32px, 5vw, 56px);
 }
 .contact-band h2 {
   font-size: 30px;
@@ -780,7 +785,16 @@ html {
   flex-shrink: 0;
 }
 .contact-band .button-row {
-  min-width: 210px;
+  flex: 0 0 230px;
+  min-width: 0;
+  max-width: 100%;
+  margin-top: 0;
+  align-items: center;
+  gap: 16px;
+}
+.contact-band .palace-button {
+  max-width: 100%;
+  text-align: center;
 }
 .page-intro {
   background: #eee6d9;
@@ -1185,6 +1199,10 @@ textarea {
   .contact-band {
     align-items: start;
     flex-direction: column;
+    gap: 24px;
+  }
+  .contact-band .button-row {
+    flex-basis: auto;
   }
   .footer-columns {
     grid-template-columns: 1fr 1fr;
